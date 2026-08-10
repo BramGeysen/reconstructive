@@ -12,6 +12,7 @@ import { Image } from "astro:assets";
 import fotoGallary from "@assets/imgs/impressie-img-gallary.webp";
 import Aanbod from "@components/home/Aanbod.astro";
 import Post from "@components/home/Post.astro";
+import Welcome from "@components/home/Welcome.astro";
 
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
@@ -64,14 +65,17 @@ const t = useTranslations(lang);
     </div>
   </section>
   <Aanbod />
-  <section class="bg-green center text-white">
-    <p class="p2">
-      "Ik voel me enorm empowerd! Alsof ik gesteund word door een heel leger.
-      Alsof ik mezelf de toestemming geef om helemaal brutaal, speels, wijs
-      mezelf te zijn!"
-    </p>
-    <p>Nele</p>
+  <section class="bg-green text-align-center text-white">
+    <div class="text-margin">
+      <p class="p1 text-opacity-white">
+        "Ik voel me enorm empowerd! Alsof ik gesteund word door een heel leger.
+        Alsof ik mezelf de toestemming geef om helemaal brutaal, speels, wijs
+        mezelf te zijn!"
+      </p>
+      <p>Nele</p>
+    </div>
   </section>
+  <Welcome />
   <Post />
   <section class="bg-beige text-gray center">
     <div class="small-text-margin us">
