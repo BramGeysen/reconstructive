@@ -22,6 +22,7 @@ body {
   font-family: "times new roman";
   font-style: normal;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 img {
@@ -267,7 +268,15 @@ button:hover {
 .yellow-line {
   border: 0;
   border-bottom: 2px solid #dec15b;
-  width: 100%;
+
+  /* Reset layout constraints */
+  display: block;
+  box-sizing: border-box;
+
+  /* Break out to viewport */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 @media (max-width: 768px) {
