@@ -1,7 +1,6 @@
 ---
 import AanbodCard from "@components/aanbod/AanbodCard.astro";
 import constructImg from "@assets/imgs/constructImg.jpg";
-import grassPathImg from "@assets/imgs/grass-path.jpg";
 import mountainPathImg from "@assets/imgs/mountain-path.jpg";
 import AanbodDetails from "./AanbodDetails.astro";
 ---
@@ -18,15 +17,6 @@ import AanbodDetails from "./AanbodDetails.astro";
         img={constructImg}
       />
     </div>
-    <div class="card-wrapper" data-content="reconstructive" id="reconstructive">
-      <AanbodCard
-        title="Reconstructive (2 dagen)"
-        text="Ervaar de transformerend kracht van Reconstructive en kom dichter bij je intuïtie, je vrijheid en je kern."
-        link="#"
-        alt="Foto van een houte pad door het hoge grass"
-        img={grassPathImg}
-      />
-    </div>
     <div class="card-wrapper" data-content="gold" id="gold">
       <AanbodCard
         title="Find your gold (6 dagen)"
@@ -37,320 +27,293 @@ import AanbodDetails from "./AanbodDetails.astro";
       />
     </div>
   </div>
-</div>
-<div class="details text-gray text-margin" data-content="construct">
-  <AanbodDetails
-    title="Een ontmoeting"
-    text={[
-      " Een eerste ontmoeting met je essentie en met de reconstructive methode.",
-      "Voor wie wilt proeven van wat er leeft voorbij je patronen",
-      "Merk jij ook dat sommigen vrijer leven dan jij? Dat als jij iets wil veranderen, er meteen een stem in jouw hoofd zegt, 'ja maar, dat kan niet want...' Die stemmetjes bepalen mee hoe groot jouw vrijheid aanvoelt.",
-      "Tijdens deze initiatiedag stap je uit je vertrouwde kaders. Via belevings-oefeningen en de wijsheid van de natuur word je uitgenodigd om buiten je construct te stappen. Het is alsof je een raam opent dat lang dicht zat. Er komt licht binnen. Ruimte. Nieuwsgierigheid.",
-      "De natuur vindt altijd een weg ook in complexe omstandigheden. En precies dat herinnert jou eraan dat ook jij kunt bewegen, verschuiven, openen.",
-    ]}
-    li={[
-      "Ruimer perspectief op je eigen patronen",
-      "Een eerste ervaring van ruimte en vrijheid",
-      "Meer bewustzijn over wat jou stuurt",
-      "Nieuwsgierigheid als startpunt voor groei",
-    ]}
-  />
-</div>
-<div class="details text-gray text-margin" data-content="reconstructive">
-  <AanbodDetails
-    title="Een uitnodiging"
-    text={[
-      "een uitnodiging om dichter bij jezelf te komen.",
-      "Soms voel je dat er nog iets in de weg zit. Iets wat niet via het hoofd loskomt, maar via het lichaam wil gezien worden.",
-      "Vaak zijn het diepgewortelde patronen, oude verhalen, ingehouden emoties en overlevingsstrategieën die ons onbewust ervan weerhouden om ons potentieel ten volle te leven. Door ermee te werken in het lichaam komt er beweging, helderheid en richting.",
-      "Via Reconstructive wordt het denken opzijgezet. Wat overblijft is het lichaam en wat het je te vertellen heeft.",
-      "We werken in kleine groepjes, zonder taal. We bouwen samen een energetisch veld waaruit beweging ontstaat. De groep is een spiegelend veld: wat je bij anderen ziet, raakt iets in jou. Wat jij laat zien, opent iets bij hen.",
-      "Reconstructive is geen therapie, maar een uitnodiging om je over te geven aan wat zich in jou wil tonen. Zonder verhaal. Zonder analyse. Alleen een directe ontmoeting met jezelf en je volle potentieel.",
-    ]}
-    li={[
-      "Ruimer perspectief op je eigen patronen",
-      "Meer vrijheid",
-      "Nieuwe inzichten",
-      "Doorbraak in patronen die tot nu toe bleven vastzitten",
-      "Een ervaring die een blijvende indruk nalaat",
-    ]}
-  />
-</div>
-<div class="details text-gray text-margin" data-content="gold">
-  <AanbodDetails
-    title="Een thuiskomen"
-    text={[
-      "Een thuiskomen bij jezelf.",
-      "Deze retreat is een innerlijke tocht waarbij we laag na laag dichterbij jouw blauwdruk komen, zodat zichtbaar wordt wie je altijd al was.",
-      "Elke dag trekken we de natuur in. Ze spiegelt je zonder oordeel: waar je nog vasthoudt, waar je mag verzachten, waar je mag openen. De natuur laat zien wat je lichaam al wist, maar wat je hoofd misschien nog niet durfde te erkennen.",
-      "Reconstructive maakt zichtbaar wat je onderweg tegenkomt: oude patronen, beschermingslagen, ingehouden emoties. Door ermee te werken in het lichaam komt er beweging, helderheid en richting. Je voelt hoe je dichter bij je blauwdruk komt dat stille, diepe weten van wie jij in essentie bent.",
-      "De groep wordt een bedding. Je hoeft het niet alleen te doen, maar je maakt wel je eigen innerlijke reis.",
-    ]}
-    li={[
-      "Meer helderheid",
-      "belichaming",
-      "rust",
-      "stevig contact met je kern",
-    ]}
-  />
-</div>
+  <div class="details text-gray text-margin" data-content="construct">
+    <AanbodDetails
+      title="Een ontmoeting"
+      text={[
+        " Een eerste ontmoeting met je essentie en met de reconstructive methode.",
+        "Voor wie wilt proeven van wat er leeft voorbij je patronen",
+        "Merk jij ook dat sommigen vrijer leven dan jij? Dat als jij iets wil veranderen, er meteen een stem in jouw hoofd zegt, 'ja maar, dat kan niet want...' Die stemmetjes bepalen mee hoe groot jouw vrijheid aanvoelt.",
+        "Tijdens deze initiatiedag stap je uit je vertrouwde kaders. Via belevings-oefeningen en de wijsheid van de natuur word je uitgenodigd om buiten je construct te stappen. Het is alsof je een raam opent dat lang dicht zat. Er komt licht binnen. Ruimte. Nieuwsgierigheid.",
+        "De natuur vindt altijd een weg ook in complexe omstandigheden. En precies dat herinnert jou eraan dat ook jij kunt bewegen, verschuiven, openen.",
+      ]}
+      li={[
+        "Ruimer perspectief op je eigen patronen",
+        "Een eerste ervaring van ruimte en vrijheid",
+        "Meer bewustzijn over wat jou stuurt",
+        "Nieuwsgierigheid als startpunt voor groei",
+      ]}
+    />
+  </div>
+  <div class="details text-gray text-margin" data-content="gold">
+    <AanbodDetails
+      title="Een thuiskomen"
+      text={[
+        "Een thuiskomen bij jezelf.",
+        "Deze retreat is een innerlijke tocht waarbij we laag na laag dichterbij jouw blauwdruk komen, zodat zichtbaar wordt wie je altijd al was.",
+        "Elke dag trekken we de natuur in. Ze spiegelt je zonder oordeel: waar je nog vasthoudt, waar je mag verzachten, waar je mag openen. De natuur laat zien wat je lichaam al wist, maar wat je hoofd misschien nog niet durfde te erkennen.",
+        "Reconstructive maakt zichtbaar wat je onderweg tegenkomt: oude patronen, beschermingslagen, ingehouden emoties. Door ermee te werken in het lichaam komt er beweging, helderheid en richting. Je voelt hoe je dichter bij je blauwdruk komt dat stille, diepe weten van wie jij in essentie bent.",
+        "De groep wordt een bedding. Je hoeft het niet alleen te doen, maar je maakt wel je eigen innerlijke reis.",
+      ]}
+      li={[
+        "Meer helderheid",
+        "belichaming",
+        "rust",
+        "stevig contact met je kern",
+      ]}
+    />
+  </div>
 
-<script>
-  const init = () => {
-    const container = document.querySelector<HTMLElement>(
-      ".aanbodCardContainer",
-    );
-    const cardWrappers =
-      document.querySelectorAll<HTMLElement>(".card-wrapper");
-    const details = document.querySelectorAll<HTMLElement>(".details");
+  <script>
+    const init = () => {
+      const container = document.querySelector<HTMLElement>(
+        ".aanbodCardContainer",
+      );
+      const cardWrappers =
+        document.querySelectorAll<HTMLElement>(".card-wrapper");
+      const details = document.querySelectorAll<HTMLElement>(".details");
 
-    const updateSlider = (contentName: string) => {
-      if (!container) return;
-      const index =
-        contentName === "construct"
-          ? "0"
-          : contentName === "reconstructive"
-            ? "1"
-            : "2";
-      container.style.setProperty("--active-index", index);
-    };
+      const updateSlider = (contentName: string) => {
+        if (!container) return;
+        const index = contentName === "construct" ? "0" : "1";
+        container.style.setProperty("--active-index", index);
+      };
 
-    // 1. Check de URL hash bij het laden van de pagina
-    const hash = window.location.hash.replace("#", "");
-    if (hash) {
-      const cardWithContent = document.getElementById(hash);
+      // 1. Check de URL hash bij het laden van de pagina (bijv. vanaf homepage)
+      const hash = window.location.hash.replace("#", "");
+      if (hash) {
+        const cardWithContent = document.getElementById(hash);
 
-      if (cardWithContent) {
-        cardWithContent.classList.add("active");
-        updateSlider(hash);
-
-        details.forEach((detail) => {
-          detail.classList.remove("show");
-          if (detail.dataset.content === hash) {
-            detail.classList.add("show");
-          }
-        });
-      }
-    }
-
-    // 2. Click handlers voor de kaarten
-    if (cardWrappers.length > 0) {
-      cardWrappers.forEach((cardWrapper) => {
-        cardWrapper.addEventListener("click", (event) => {
-          event.preventDefault();
-          const content = cardWrapper.dataset.content;
-
-          if (!content) return;
-
-          window.location.hash = content;
-
-          cardWrappers.forEach((cw) => {
-            if (cw.dataset.content === content) {
-              cw.classList.add("active");
-              updateSlider(content);
-            } else {
-              cw.classList.remove("active");
-            }
-          });
+        if (cardWithContent) {
+          cardWithContent.classList.add("active");
+          updateSlider(hash);
 
           details.forEach((detail) => {
             detail.classList.remove("show");
-            if (detail.dataset.content === content) {
+            if (detail.dataset.content === hash) {
               detail.classList.add("show");
-              detail.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
             }
           });
+
+          // Automatisch naar de kaart scrollen bij het navigeren vanaf de homepage
+          setTimeout(() => {
+            cardWithContent.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }, 100);
+        }
+      }
+
+      // 2. Click handlers voor de kaarten (op de Aanbod pagina zelf)
+      if (cardWrappers.length > 0) {
+        cardWrappers.forEach((cardWrapper) => {
+          cardWrapper.addEventListener("click", (event) => {
+            event.preventDefault();
+            const content = cardWrapper.dataset.content;
+
+            if (!content) return;
+
+            // Update URL hash zonder te scrollen
+            history.replaceState(null, "", `#${content}`);
+
+            cardWrappers.forEach((cw) => {
+              if (cw.dataset.content === content) {
+                cw.classList.add("active");
+                updateSlider(content);
+              } else {
+                cw.classList.remove("active");
+              }
+            });
+
+            const isMobile = window.matchMedia("(max-width: 800px)").matches;
+
+            details.forEach((detail) => {
+              detail.classList.remove("show");
+              if (detail.dataset.content === content) {
+                detail.classList.add("show");
+                if (isMobile) {
+                  detail.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              }
+            });
+          });
         });
-      });
-    }
-  };
+      }
+    };
 
-  document.addEventListener("astro:page-load", init);
-</script>
+    document.addEventListener("astro:page-load", init);
+  </script>
 
-<style>
-  /* --- DESKTOP LAYOUT --- */
-  .grid {
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-
-  .aanbodCardContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    margin-bottom: 0;
-    position: relative;
-  }
-
-  /* Desktop volgorde voor de kaarten */
-  .card-wrapper[data-content="construct"] {
-    order: 1;
-  }
-  .card-wrapper[data-content="reconstructive"] {
-    order: 2;
-  }
-  .card-wrapper[data-content="gold"] {
-    order: 3;
-  }
-  .card-wrapper {
-    cursor: pointer;
-    background-color: transparent;
-    padding: 2rem 1.5rem;
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-    transition:
-      transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-      opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .card-wrapper:not(.active):hover {
-    transform: translateY(-8px);
-  }
-
-  .card-wrapper.active {
-    opacity: 1 !important;
-  }
-
-  .aanbodCardContainer:has(.card-wrapper.active) .card-wrapper:not(.active) {
-    opacity: 0.6;
-  }
-
-  /* Sliding Background Indicator */
-  .card-bg-slider {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: calc((100% - 4rem) / 3);
-    left: 0;
-    background-color: white;
-    border-radius: 20px 20px 0 0;
-    transition:
-      transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-      opacity 0.4s ease;
-    box-shadow:
-      0 -10px 25px rgba(0, 0, 0, 0.03),
-      -10px 0 25px rgba(0, 0, 0, 0.03),
-      10px 0 25px rgba(0, 0, 0, 0.03);
-    z-index: 0;
-    pointer-events: none;
-    transform: translateX(calc(var(--active-index, 0) * (100% + 2rem)));
-    opacity: 0;
-  }
-
-  .aanbodCardContainer:has(.card-wrapper.active) .card-bg-slider {
-    opacity: 1;
-  }
-
-  /* Details op desktop */
-  .details {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
-    display: none;
-    scroll-margin-top: 300px;
-    background-color: white;
-    padding: 3rem;
-    border-radius: 0 0 20px 20px;
-    margin: 0 auto 3rem auto;
-    max-width: 1500px;
-    box-shadow:
-      0 15px 30px rgba(0, 0, 0, 0.05),
-      -15px 0 30px rgba(0, 0, 0, 0.05),
-      15px 0 30px rgba(0, 0, 0, 0.05);
-    position: relative;
-    z-index: 1;
-  }
-
-  .details.show {
-    display: grid;
-    animation: detailsFadeInContainer 0.5s cubic-bezier(0.16, 1, 0.3, 1)
-      forwards;
-  }
-
-  .details.show > * {
-    opacity: 0;
-    animation: detailsFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-
-  .details.show > *:nth-child(1) {
-    animation-delay: 0.05s;
-  }
-  .details.show > *:nth-child(2) {
-    animation-delay: 0.18s;
-  }
-
-  @keyframes detailsFadeInContainer {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes detailsFadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(15px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @media (max-width: 800px) {
-    :global(main),
-    .grid,
-    :parent {
-      display: grid;
-      grid-template-columns: 1fr;
+  <style>
+    .grid {
+      width: 100%;
+      max-width: 1500px;
+      margin: 0 auto;
     }
 
     .aanbodCardContainer {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 0;
+      position: relative;
     }
-
-    .card-bg-slider {
-      display: none;
-    }
-
-    /* Marges corrigeren voor mobiel aangezien 'contents' de wrapper-marges wist */
     .card-wrapper {
-      margin: 1rem 1.5rem;
-      padding: 1.5rem;
+      cursor: pointer;
+      background-color: transparent;
+      padding: 2rem 1.5rem;
       border-radius: 20px;
+      position: relative;
+      z-index: 1;
       transition:
-        background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
         transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-        opacity 0.4s ease;
+        opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-wrapper:not(.active):hover {
+      transform: translateY(-8px);
     }
 
     .card-wrapper.active {
-      transform: none; /* Geen opmerkelijke desktop-verschuivingen op mobiel */
+      opacity: 1 !important;
+    }
+
+    .aanbodCardContainer:has(.card-wrapper.active) .card-wrapper:not(.active) {
+      opacity: 0.6;
+    }
+
+    /* Sliding Background Indicator */
+    .card-bg-slider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: calc((100% - 2rem) / 2);
+      left: 0;
       background-color: white;
-      border-radius: 20px;
+      border-radius: 20px 20px 0 0;
+      transition:
+        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        opacity 0.4s ease;
+      box-shadow:
+        0 -10px 25px rgba(0, 0, 0, 0.03),
+        -10px 0 25px rgba(0, 0, 0, 0.03),
+        10px 0 25px rgba(0, 0, 0, 0.03);
+      z-index: 0;
+      pointer-events: none;
+      transform: translateX(calc(var(--active-index, 0) * (100% + 2rem)));
+      opacity: 0;
     }
 
-    /* 4. Details tonen in 1 kolom onder de actieve kaart */
-    .details.show {
-      display: block;
-      grid-template-columns: 1fr;
-      padding: 1.5rem;
-      margin: 1rem 1.5rem 2rem 1.5rem;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    .aanbodCardContainer:has(.card-wrapper.active) .card-bg-slider {
+      opacity: 1;
     }
 
+    /* Details op desktop */
     .details {
-      scroll-margin-top: 0;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3rem;
+      display: none;
+      scroll-margin-top: 300px;
+      background-color: white;
+      padding: 3rem;
+      border-radius: 0 0 20px 20px;
+      margin: 0 auto 3rem auto;
+      max-width: 1500px;
+      box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.05);
+      position: relative;
+      z-index: 1;
     }
-  }
-</style>
+
+    .details.show {
+      display: grid;
+      animation: detailsFadeInContainer 0.5s cubic-bezier(0.16, 1, 0.3, 1)
+        forwards;
+    }
+
+    .details.show > * {
+      opacity: 0;
+      animation: detailsFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .details.show > *:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+    .details.show > *:nth-child(2) {
+      animation-delay: 0.18s;
+    }
+
+    @keyframes detailsFadeInContainer {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes detailsFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 800px) {
+      :global(main),
+      .grid,
+      :parent {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .aanbodCardContainer {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-bg-slider {
+        display: none;
+      }
+
+      /* Marges corrigeren voor mobiel aangezien 'contents' de wrapper-marges wist */
+      .card-wrapper {
+        margin: 1rem 1.5rem;
+        padding: 1.5rem;
+        border-radius: 20px;
+        transition:
+          background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+          opacity 0.4s ease;
+      }
+
+      .card-wrapper.active {
+        transform: none; /* Geen opmerkelijke desktop-verschuivingen op mobiel */
+        background-color: white;
+        border-radius: 20px;
+      }
+
+      /* 4. Details tonen in 1 kolom onder de actieve kaart */
+      .details.show {
+        display: block;
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        margin: 1rem 1.5rem 2rem 1.5rem;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .details {
+        scroll-margin-top: 0;
+      }
+    }
+  </style>
+</div>
