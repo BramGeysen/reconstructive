@@ -73,29 +73,51 @@ import AanbodDetails from "./AanbodDetails.astro";
         document.querySelectorAll<HTMLElement>(".card-wrapper");
       const details = document.querySelectorAll<HTMLElement>(".details");
 
+      const contentIndexMap: Record<string, string> = {
+        construct: "0",
+        gold: "1",
+      };
+
       const updateSlider = (contentName: string) => {
         if (!container) return;
-        const index = contentName === "construct" ? "0" : "1";
+        const index = contentIndexMap[contentName] || "0";
         container.style.setProperty("--active-index", index);
       };
 
-      // 1. Check de URL hash bij het laden van de pagina (bijv. vanaf homepage)
-      const hash = window.location.hash.replace("#", "");
-      if (hash) {
-        const cardWithContent = document.getElementById(hash);
+      const setActiveCard = (contentName: string, shouldScroll: boolean = false) => {
+        const targetContent = contentName || "construct";
 
-        if (cardWithContent) {
-          cardWithContent.classList.add("active");
-          updateSlider(hash);
+        cardWrappers.forEach((cw) => {
+          if (cw.dataset.content === targetContent) {
+            cw.classList.add("active");
+          } else {
+            cw.classList.remove("active");
+          }
+        });
 
-          details.forEach((detail) => {
-            detail.classList.remove("show");
-            if (detail.dataset.content === hash) {
-              detail.classList.add("show");
+        updateSlider(targetContent);
+
+        details.forEach((detail) => {
+          if (detail.dataset.content === targetContent) {
+            detail.classList.add("show");
+            if (shouldScroll) {
+              detail.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
             }
-          });
+          } else {
+            detail.classList.remove("show");
+          }
+        });
+      };
 
-          // Automatisch naar de kaart scrollen bij het navigeren vanaf de homepage
+      // 1. Actieve kaart en slider instellen op basis van de URL hash bij laden
+      const initialHash = window.location.hash.replace("#", "");
+      if (initialHash) {
+        setActiveCard(initialHash, false);
+        const cardWithContent = document.getElementById(initialHash);
+        if (cardWithContent) {
           setTimeout(() => {
             cardWithContent.scrollIntoView({
               behavior: "smooth",
@@ -103,9 +125,58 @@ import AanbodDetails from "./AanbodDetails.astro";
             });
           }, 100);
         }
+      } else {
+        setActiveCard("construct", false);
       }
 
-      // 2. Click handlers voor de kaarten (op de Aanbod pagina zelf)
+      // 2. Luisteren naar URL hash veranderingen (bijv. vanaf kalender of navigatie)
+      const handleHashUpdate = () => {
+        const hash = window.location.hash.replace("#", "");
+        if (hash) {
+          setActiveCard(hash, false);
+          const cardWithContent = document.getElementById(hash);
+          if (cardWithContent) {
+            cardWithContent.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        }
+      };
+
+      window.addEventListener("hashchange", handleHashUpdate);
+      window.addEventListener("popstate", handleHashUpdate);
+
+      // 3. Document-wide link handler voor ankers op dezelfde pagina (bijv. "lees meer" in kalender)
+      document.addEventListener("click", (event) => {
+        const target = event.target as HTMLElement;
+        const anchor = target.closest("a");
+        if (!anchor) return;
+
+        const href = anchor.getAttribute("href");
+        if (href && (href.includes("#construct") || href.includes("#gold"))) {
+          const hashMatch = href.split("#")[1];
+          if (hashMatch && (hashMatch === "construct" || hashMatch === "gold")) {
+            const targetPath = anchor.pathname.replace(/\/$/, "");
+            const currentPath = window.location.pathname.replace(/\/$/, "");
+
+            if (targetPath === currentPath) {
+              event.preventDefault();
+              history.pushState(null, "", href);
+              setActiveCard(hashMatch, false);
+              const cardWithContent = document.getElementById(hashMatch);
+              if (cardWithContent) {
+                cardWithContent.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            }
+          }
+        }
+      });
+
+      // 4. Click handlers voor de kaarten (op de Aanbod pagina zelf)
       if (cardWrappers.length > 0) {
         cardWrappers.forEach((cardWrapper) => {
           cardWrapper.addEventListener("click", (event) => {
@@ -114,37 +185,21 @@ import AanbodDetails from "./AanbodDetails.astro";
 
             if (!content) return;
 
-            // Update URL hash zonder te scrollen
+            // Update URL hash
             history.replaceState(null, "", `#${content}`);
 
-            cardWrappers.forEach((cw) => {
-              if (cw.dataset.content === content) {
-                cw.classList.add("active");
-                updateSlider(content);
-              } else {
-                cw.classList.remove("active");
-              }
-            });
-
             const isMobile = window.matchMedia("(max-width: 800px)").matches;
-
-            details.forEach((detail) => {
-              detail.classList.remove("show");
-              if (detail.dataset.content === content) {
-                detail.classList.add("show");
-                if (isMobile) {
-                  detail.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  });
-                }
-              }
-            });
+            setActiveCard(content, isMobile);
           });
         });
       }
     };
 
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
     document.addEventListener("astro:page-load", init);
   </script>
 

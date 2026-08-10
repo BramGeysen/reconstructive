@@ -15,11 +15,9 @@ let anchor = "";
 switch (kalenderData.type) {
   case "Voorbij je construct":
     anchor = "/aanbod#construct";
+    break;
   case "Find your gold":
     anchor = "/aanbod#gold";
-    break;
-  case "Reconstructive":
-    anchor = "/aanbod#reconstructive";
     break;
   default:
     anchor = "/aanbod";
@@ -55,8 +53,8 @@ const link = translatePath(anchor);
         </p>
       )
     }
-    <a href={link} class="btn-link">
-      <button class="green-btn">lees meer</button>
+    <a href={link} class="btn-link green-btn btn">
+      lees meer
     </a>
   </div>
 </div>
