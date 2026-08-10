@@ -2,6 +2,7 @@
   --reconstructive-green: #87a96b;
   --reconstructive-beige: #f6eed2;
   --text-white: #ffffff;
+  --text-half-white: #ffffff74;
   --text-green: #517139;
   --text-black: black;
   --text-gray: #6f6b5e;
@@ -21,6 +22,7 @@ body {
   font-family: "times new roman";
   font-style: normal;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 img {
@@ -53,7 +55,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Inter";
+  font-family: "Georgia", sans-serif;
   font-weight: 400;
 }
 
@@ -266,7 +268,15 @@ button:hover {
 .yellow-line {
   border: 0;
   border-bottom: 2px solid #dec15b;
-  width: 100%;
+
+  /* Reset layout constraints */
+  display: block;
+  box-sizing: border-box;
+
+  /* Break out to viewport */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 @media (max-width: 768px) {

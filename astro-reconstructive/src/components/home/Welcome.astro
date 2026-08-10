@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import poster from "@assets/imgs/reconstructive-poster.jpeg";
+import { getLangFromUrl, useTranslations } from "@src/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="bg-beige text-gray center">
+  <div class="text-margin center">
+    <h2>{t("home.welcome.title")}</h2>
+    <p>{t("home.welcome.text1")}</p>
+    <p>{t("home.welcome.text2")}</p>
+    <p>{t("home.welcome.text3")}</p>
+    <p>{t("home.welcome.text4")}</p>
+
+    <Image src={poster} alt="Reconstructive poster" />
+  </div>
+</section>
+<style>
+  .img {
+    width: 100%;
+    height: auto;
+  }
+</style>

@@ -13,7 +13,6 @@ export const ui = {
   nl: {
     "nav.aanpak": "onze aanpak",
     "nav.aanbod": "aanbod",
-    "nav.impressies": "impressies",
     "nav.about": "over ons",
 
     "footer.website": "De Website is gemaakt met Astro door:",
@@ -30,18 +29,15 @@ export const ui = {
       "Ben je bereid om vanuit je kern te leven en om vol ja tegen het leven te kunnen zeggen?",
     "home.aanbod.title": "Ons aanbod",
     "home.aanbod.intro1":
-      "Ons aanbod bestaat uit drie formules die elkaar verdiepen: een eerste kennismakingsdag, een tweedaagse verdieping tot een innerlijke zesdaagse tocht.",
+      "Ons aanbod bestaat uit twee formules die elkaar verdiepen: een eerste kennismakingsdag tot een innerlijke zesdaagse tocht.",
     "home.aanbod.intro2":
       "Welke formule je ook kiest, elke stap brengt je dichter bij wie je werkelijk bent.",
-    "home.aanbod.noOrder": "Er is geen verplichte volgorde.",
+    "home.aanbod.noOrder":
+      "Er is geen verplichte volgorde en je kan ze los van elkaar volgen. Voel vooral waar jou energie naar toe gaat.",
     "home.aanbod.card1.title": "Voorbij je construct (1 dag)",
     "home.aanbod.card1.text":
       "Stap één dag buiten je vertrouwde patronen en ontdek hoeveel ruimte er ontstaat wanneer je je construct loslaat.",
     "home.aanbod.card1.alt": "Foto van een plein met een bloem in het midden",
-    "home.aanbod.card2.title": "Reconstructive (2 dagen)",
-    "home.aanbod.card2.text":
-      "Ervaar de transformerende kracht van Reconstructive en kom dichter bij je intuïtie, je vrijheid en je kern.",
-    "home.aanbod.card2.alt": "Foto van een houten pad door het hoge gras",
     "home.aanbod.card3.title": "Find your gold (6 dagen)",
     "home.aanbod.card3.text":
       "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent",
@@ -75,20 +71,18 @@ export const ui = {
       "Beweging waar je vastzat. Helderheid waar verwarring zat. Ruimte waar spanning zat.",
     "home.what.text5":
       "Je intuïtie wordt sterker, je vrijheid groter, je lichaam rustiger. Je laat oude verhalen los en maakt contact met je potentieel — voelbaar, doorleefd en blijvend aanwezig in je dagelijks leven.",
-
-    // Impressies
-    "impressies.hero.title": "Impressies",
-    "impressies.hero.description":
-      "Om je een beeld te geven hoe Reconstructive eruit kan zien, volgen hier enkele foto's.",
-    "impressies.gallery.alt": "Fotogalerij van de Reconstructive workshop",
-    "impressies.expert.title": "Jij bent de expert van je eigen reis",
-    "impressies.expert.body1":
-      "Wij geloven dat iedereen een geschenk is voor deze wereld, een expert in zijn of haar eigen leven, en dat alles wat je nodig hebt al in jezelf aanwezig is. Jij zit aan het stuur van je eigen leerproces.",
-    "impressies.expert.body2":
-      "Bij Reconstructive helpen we je om je volledige potentieel te ontplooien en authentiek te leven.",
-    "impressies.ready.title": "Ben je klaar om dichter bij je kern te komen?",
-    "impressies.ready.button":
-      "Contacteer ons voor een vrijblijvend kennismakingsgesprek",
+    "home.welcome.title": "Welkom bij Reconstructive.be",
+    "home.welcome.text1":
+      "Een bron van verbinding, waar diepe transformatie via woordeloos lichaamswerk oude patronen doorbreekt, en je volwassen deel opnieuw toegang krijgt tot je pure kern.",
+    "home.welcome.text2":
+      "Wij, Elke en Bram, bundelen hier onze krachten. Vanuit onze eigen praktijken brengen we onze ervaring, gevoeligheid en vakmanschap samen in één gedeeld veld. Wat ons verbindt, is onze diepe toewijding aan Reconstructive en de bron waaruit dit werk is ontstaan.",
+    "home.welcome.text3":
+      "Elke en Bram zijn met open hart in de RIIHS‑community opgenomen. Elke en Bram zijn dankbaar voor de weg die zich opent en voor de gemeenschap die hen draagt. Het is een hele eer om dit pad van vertrouwen en verdieping verder te bewandelen.",
+    "home.welcome.text4": "Dankjewel aan de RIIHS familie!",
+    "home.testimonial.text":
+      '"Ik voel me enorm empowerd! Alsof ik gesteund word door een heel leger. Alsof ik mezelf de toestemming geef om helemaal brutaal, speels, wijs mezelf te zijn!"',
+    "home.testimonial.author": "Nele",
+    "impressies.gallery.alt": "Verzamiling van fotos van reconstructive",
 
     // About
     "about.hero.title": "Ontdek Reconstructive: Jouw reis naar authenticiteit",
@@ -319,7 +313,6 @@ export const ui = {
   en: {
     "nav.aanpak": "our approach",
     "nav.aanbod": "offer",
-    "nav.impressies": "impressions",
     "nav.about": "about us",
 
     "footer.website": "The website was built with Astro by:",
@@ -356,10 +349,6 @@ export const ui = {
     "home.aanbod.card1.text":
       "Step out of your familiar patterns for a day and discover how much space is created when you let go of your construct.",
     "home.aanbod.card1.alt": "Photo of a square with a flower in the center",
-    "home.aanbod.card2.title": "Reconstructive (2 days)",
-    "home.aanbod.card2.text":
-      "Experience the transformative power of Reconstructive and get closer to your intuition, freedom, and core.",
-    "home.aanbod.card2.alt": "Photo of a wooden path through tall grass",
     "home.aanbod.card3.title": "Find your gold (6 days)",
     "home.aanbod.card3.text":
       "Embark on a profound journey through nature and body, and return to the essence of who you truly are",
@@ -382,20 +371,18 @@ export const ui = {
     "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
     "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
     "home.about.mail": "email",
-
-    // Impressies
-    "impressies.hero.title": "Impressions",
-    "impressies.hero.description":
-      "To give you an idea of what Reconstructive can look like, here are some photos.",
-    "impressies.gallery.alt": "Photo gallery of the Reconstructive workshop",
-    "impressies.expert.title": "You are the expert of your own journey",
-    "impressies.expert.body1":
-      "We believe that everyone is a gift to this world, an expert in his or her own life, and that everything you need is already present within yourself. You are in the driver's seat of your own learning process.",
-    "impressies.expert.body2":
-      "At Reconstructive, we help you to develop your full potential and live authentically.",
-    "impressies.ready.title": "Are you ready to come closer to your core?",
-    "impressies.ready.button":
-      "Contact us for a free, no-obligation conversation",
+    "home.welcome.title": "Welcome to Reconstructive.be",
+    "home.welcome.text1":
+      "A source of connection, where deep transformation through wordless bodywork breaks old patterns, and your adult self regains access to your pure core.",
+    "home.welcome.text2":
+      "We, Elke and Bram, combine our forces here. From our own practices, we bring together our experience, sensitivity, and craftsmanship into one shared field. What connects us is our deep dedication to Reconstructive and the source from which this work originated.",
+    "home.welcome.text3":
+      "Elke and Bram have been welcomed with open hearts into the RIIHS community. Elke and Bram are grateful for the path that opens before them and for the community that supports them. It is a true honor to walk this path of trust and deepening further.",
+    "home.welcome.text4": "Thank you to the RIIHS family!",
+    "home.testimonial.text":
+      '"I feel hugely empowered! As if I am supported by an entire army. As if I give myself permission to be completely bold, playful, and wise as myself!"',
+    "home.testimonial.author": "Nele",
+    "impressies.gallery.alt": "Collection of photos of reconstructive",
 
     // About
     "about.hero.title": "Discover Reconstructive: Your journey to authenticity",

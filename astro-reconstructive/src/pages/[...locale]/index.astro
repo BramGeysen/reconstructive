@@ -4,39 +4,19 @@ import {
   getStaticPaths,
   getLangFromUrl,
   useTranslations,
-  useTranslatedPath,
 } from "@src/i18n/utils";
-import { sanityClient } from "sanity:client";
-import type { SanityDocument } from "@sanity/client";
-import AanbodCard from "@components/aanbod/AanbodCard.astro";
-import constructImg from "@assets/imgs/constructImg.jpg";
-import grassPathImg from "@assets/imgs/grass-path.jpg";
-import mountainPathImg from "@assets/imgs/mountain-path.jpg";
+
 import groupPhotoImg from "@assets/imgs/group-foto.jpg";
 import meerImg from "@assets/imgs/meer.jpg";
 import { Image } from "astro:assets";
-import AnimationQuotes from "@components/AnimationQuotes.astro";
-import SanityImg from "@components/SanityImg.astro";
+import fotoGallary from "@assets/imgs/impressie-img-gallary.webp";
+import Aanbod from "@components/home/Aanbod.astro";
+import Post from "@components/home/Post.astro";
+import Welcome from "@components/home/Welcome.astro";
 
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
-
-const posts_query = `*[
-  _type == "post" 
-  && defined(slug.current)
-  && language == $lang
-] | order(publishedAt desc)[0...2] {
-  _id, 
-  title, 
-  slug, 
-  description,
-  language,
-  image
-}`;
-
-const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
 ---
 
 <Layout title="home">
@@ -46,52 +26,23 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
   >
     <h1 class="text-align-center">{t("home.hero.title")}</h1>
   </section>
-  <section class="bg-green text-white center roman-font">
+  <section class="bg-beige text-gray center roman-font">
     <p class="p1">
       <strong>{t("home.quote.author")}:</strong>
       {t("home.quote.text")}
     </p>
   </section>
-  <section class="bg-beige text-gray center">
-    <div class="text-margin us">
-      <div class="big img-wrapper">
-        <Image
-          alt={t("home.about.groupPhotoAlt")}
-          width={500}
-          height={500}
-          src={groupPhotoImg}
-          class="img"
-        />
-      </div>
-      <div>
-        <h3>{t("home.about.title")}</h3>
-        <p>{t("home.about.reconstructive")}</p>
-        <p>
-          {t("home.about.text2")}
-          <a
-            href="https://reconstructiveschool.com/"
-            class="text-green a-under-line">https://reconstructiveschool.com</a
-          >
-        </p>
-        <h4>
-          {t("home.about.contactTitle")}
-        </h4>
-        <div>
-          <div>
-            <p>{t("home.about.elkePhone")} {t("home.about.bramPhone")}</p>
-
-            <p>
-              {t("home.about.mail")}: <a href="mailto:info@reconstructive.be"
-                >info@reconstructive.be</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg-green text-white text-align-center">
+  <section class="bg-green text-white center">
     <h2>{t("home.what.title")}</h2>
+  </section>
+  <section class="bg-beige center">
+    <Image
+      class="img"
+      src={fotoGallary}
+      alt={t("impressies.gallery.alt")}
+      width={1000}
+      height={500}
+    />
   </section>
   <section class="bg-beige text-gray center">
     <div class="container small-text-margin">
@@ -105,99 +56,25 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
       <p>{t("home.what.text5")}</p>
     </div>
   </section>
-  <section class="bg-green text-white center">
+  <section class="bg-beige text-gray center"></section>
+  <section class="bg-green text-white center roman-font">
     <div class="text-margin text-align-center">
       <p class="p1">
         {t("home.cta.title")}
       </p>
     </div>
   </section>
-  <section class="bg-beige text-gray center">
-    <div class="container center text-align-center text-margin">
-      <h2 class="text-green">{t("home.aanbod.title")}</h2>
-      <p>{t("home.aanbod.intro1")}</p>
-      <p>{t("home.aanbod.intro2")}</p>
-      <p>{t("home.aanbod.noOrder")}</p>
-      <hr class="yellow-line" />
-      <div class="AanbodCardContainer">
-        <AanbodCard
-          title={t("home.aanbod.card1.title")}
-          text={t("home.aanbod.card1.text")}
-          link={translatePath("/aanbod#construct")}
-          alt={t("home.aanbod.card1.alt")}
-          img={constructImg}
-        />
-        <AanbodCard
-          title={t("home.aanbod.card2.title")}
-          text={t("home.aanbod.card2.text")}
-          link={translatePath("/aanbod#reconstructive")}
-          alt={t("home.aanbod.card2.alt")}
-          img={grassPathImg}
-        />
-        <AanbodCard
-          title={t("home.aanbod.card3.title")}
-          text={t("home.aanbod.card3.text")}
-          link={translatePath("/aanbod#gold")}
-          alt={t("home.aanbod.card3.alt")}
-          img={mountainPathImg}
-        />
-      </div>
-      <hr class="yellow-line" />
-      <a class="btn green-btn big-btn" href="mailto:info@reconstructive.be"
-        >{t("home.aanbod.button")}</a
-      >
-    </div>
-    <AnimationQuotes />
-  </section>
-  <section class="bg-green text-white blog">
-    <div class="small-text-margin center">
-      <h2 class="text-align-center">{t("home.blog.title")}</h2>
-      <hr class="yellow-line" />
-      {
-        posts && posts.length === 0 && (
-          <div class="no-posts-container">
-            <p>{t("home.blog.noPosts")}</p>
-          </div>
-        )
-      }
-      {
-        posts && posts.length > 0 && (
-          <div class="col2">
-            {posts.map((post) => (
-              <a
-                href={translatePath(`/posts/${post.slug.current}`)}
-                class="center post-card-link"
-              >
-                <div class="post-card-wrapper">
-                  <div>
-                    <h4 class="text-align-center">{post.title}</h4>
-                    {post.description && (
-                      <p class="text-align-center text-gray">
-                        {post.description}
-                      </p>
-                    )}
-                    {post.image && (
-                      <div class="sanity-img-container">
-                        <SanityImg
-                          src={post.image}
-                          width={600}
-                          height={400}
-                          alt={post.title}
-                          class="card-img"
-                        />
-                      </div>
-                    )}
-                  </div>
-                  <span class="green-btn btn">{t("common.readMore")}</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        )
-      }
-      <hr class="yellow-line" />
+  <Aanbod />
+  <section class="bg-green text-align-center text-white">
+    <div class="text-margin">
+      <p class="p1 text-opacity-white">
+        {t("home.testimonial.text")}
+      </p>
+      <p>{t("home.testimonial.author")}</p>
     </div>
   </section>
+  <Welcome />
+  <Post />
   <section class="bg-beige text-gray center">
     <div class="small-text-margin us">
       <div class="img-wrapper">
@@ -215,9 +92,9 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
         </h4>
         <div class="contact-container">
           <div class="contact">
-            <p class="p3">{t("home.about.elkePhone")}</p>
-            <p class="p3">{t("home.about.bramPhone")}</p>
-            <p class="p3">
+            <p>{t("home.about.elkePhone")}</p>
+            <p>{t("home.about.bramPhone")}</p>
+            <p>
               {t("home.about.mail")}: <a href="mailto:info@reconstructive.be"
                 >info@reconstructive.be</a
               >
@@ -249,35 +126,6 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
   .yellow-line {
     border: 0;
     border-bottom: 2px solid #dec15b;
-    width: 100%;
-  }
-  .AanbodCardContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    margin: 3rem;
-  }
-
-  .post-card-link {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .post-card-wrapper {
-    background-color: var(--bg-white);
-    color: var(--text-green);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-  }
-
-  .sanity-img-wrapper {
-    max-width: 500px;
     width: 100%;
   }
 
@@ -320,14 +168,6 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
     margin: 2rem 0;
     align-items: stretch;
   }
-
-  @media (max-width: 1000px) {
-    .AanbodCardContainer {
-      grid-template-columns: 1fr;
-      margin: 1.5rem;
-    }
-  }
-
   @media (max-width: 800px) {
     .us {
       grid-template-columns: 1fr;

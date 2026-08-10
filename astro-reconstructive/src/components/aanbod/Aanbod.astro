@@ -8,6 +8,7 @@ import AanbodDetails from "./AanbodDetails.astro";
 
 <div class="grid">
   <div class="aanbodCardContainer">
+    <div class="card-bg-slider"></div>
     <div class="card-wrapper" data-content="construct" id="construct">
       <AanbodCard
         title="Voorbij je construct (1 dag)"
@@ -96,9 +97,23 @@ import AanbodDetails from "./AanbodDetails.astro";
 
 <script>
   const init = () => {
+    const container = document.querySelector<HTMLElement>(
+      ".aanbodCardContainer",
+    );
     const cardWrappers =
       document.querySelectorAll<HTMLElement>(".card-wrapper");
     const details = document.querySelectorAll<HTMLElement>(".details");
+
+    const updateSlider = (contentName: string) => {
+      if (!container) return;
+      const index =
+        contentName === "construct"
+          ? "0"
+          : contentName === "reconstructive"
+            ? "1"
+            : "2";
+      container.style.setProperty("--active-index", index);
+    };
 
     // 1. Check de URL hash bij het laden van de pagina
     const hash = window.location.hash.replace("#", "");
@@ -107,6 +122,7 @@ import AanbodDetails from "./AanbodDetails.astro";
 
       if (cardWithContent) {
         cardWithContent.classList.add("active");
+        updateSlider(hash);
 
         details.forEach((detail) => {
           detail.classList.remove("show");
@@ -131,6 +147,7 @@ import AanbodDetails from "./AanbodDetails.astro";
           cardWrappers.forEach((cw) => {
             if (cw.dataset.content === content) {
               cw.classList.add("active");
+              updateSlider(content);
             } else {
               cw.classList.remove("active");
             }
@@ -158,12 +175,16 @@ import AanbodDetails from "./AanbodDetails.astro";
   /* --- DESKTOP LAYOUT --- */
   .grid {
     width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   .aanbodCardContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+    margin-bottom: 0;
+    position: relative;
   }
 
   /* Desktop volgorde voor de kaarten */
@@ -178,9 +199,14 @@ import AanbodDetails from "./AanbodDetails.astro";
   }
   .card-wrapper {
     cursor: pointer;
+    background-color: transparent;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
     transition:
       transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-      opacity 0.4s ease;
+      opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .card-wrapper:not(.active):hover {
     transform: translateY(-8px);
@@ -194,15 +220,30 @@ import AanbodDetails from "./AanbodDetails.astro";
     opacity: 0.6;
   }
 
-  .active,
-  .details {
+  /* Sliding Background Indicator */
+  .card-bg-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: calc((100% - 4rem) / 3);
+    left: 0;
     background-color: white;
-    padding: 0 1rem;
-    border-radius: 10px;
+    border-radius: 20px 20px 0 0;
+    transition:
+      transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 0.4s ease;
+    box-shadow:
+      0 -10px 25px rgba(0, 0, 0, 0.03),
+      -10px 0 25px rgba(0, 0, 0, 0.03),
+      10px 0 25px rgba(0, 0, 0, 0.03);
+    z-index: 0;
+    pointer-events: none;
+    transform: translateX(calc(var(--active-index, 0) * (100% + 2rem)));
+    opacity: 0;
   }
 
-  .active {
-    border-radius: 0;
+  .aanbodCardContainer:has(.card-wrapper.active) .card-bg-slider {
+    opacity: 1;
   }
 
   /* Details op desktop */
@@ -211,10 +252,23 @@ import AanbodDetails from "./AanbodDetails.astro";
     column-gap: 3rem;
     display: none;
     scroll-margin-top: 300px;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 0 0 20px 20px;
+    margin: 0 auto 3rem auto;
+    max-width: 1500px;
+    box-shadow:
+      0 15px 30px rgba(0, 0, 0, 0.05),
+      -15px 0 30px rgba(0, 0, 0, 0.05),
+      15px 0 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
   }
 
   .details.show {
     display: grid;
+    animation: detailsFadeInContainer 0.5s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
   }
 
   .details.show > * {
@@ -227,6 +281,17 @@ import AanbodDetails from "./AanbodDetails.astro";
   }
   .details.show > *:nth-child(2) {
     animation-delay: 0.18s;
+  }
+
+  @keyframes detailsFadeInContainer {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   @keyframes detailsFadeIn {
@@ -252,13 +317,26 @@ import AanbodDetails from "./AanbodDetails.astro";
       display: flex;
       flex-direction: column;
     }
+
+    .card-bg-slider {
+      display: none;
+    }
+
     /* Marges corrigeren voor mobiel aangezien 'contents' de wrapper-marges wist */
     .card-wrapper {
       margin: 1rem 1.5rem;
+      padding: 1.5rem;
+      border-radius: 20px;
+      transition:
+        background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        opacity 0.4s ease;
     }
 
     .card-wrapper.active {
       transform: none; /* Geen opmerkelijke desktop-verschuivingen op mobiel */
+      background-color: white;
+      border-radius: 20px;
     }
 
     /* 4. Details tonen in 1 kolom onder de actieve kaart */
@@ -266,8 +344,9 @@ import AanbodDetails from "./AanbodDetails.astro";
       display: block;
       grid-template-columns: 1fr;
       padding: 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 8px;
+      margin: 1rem 1.5rem 2rem 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     }
 
     .details {
