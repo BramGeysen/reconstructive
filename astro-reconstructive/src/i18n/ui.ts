@@ -71,6 +71,17 @@ export const ui = {
       "Beweging waar je vastzat. Helderheid waar verwarring zat. Ruimte waar spanning zat.",
     "home.what.text5":
       "Je intuïtie wordt sterker, je vrijheid groter, je lichaam rustiger. Je laat oude verhalen los en maakt contact met je potentieel — voelbaar, doorleefd en blijvend aanwezig in je dagelijks leven.",
+    "home.welcome.title": "Welkom bij Reconstructive.be",
+    "home.welcome.text1":
+      "Een bron van verbinding, waar diepe transformatie via woordeloos lichaamswerk oude patronen doorbreekt, en je volwassen deel opnieuw toegang krijgt tot je pure kern.",
+    "home.welcome.text2":
+      "Wij, Elke en Bram, bundelen hier onze krachten. Vanuit onze eigen praktijken brengen we onze ervaring, gevoeligheid en vakmanschap samen in één gedeeld veld. Wat ons verbindt, is onze diepe toewijding aan Reconstructive en de bron waaruit dit werk is ontstaan.",
+    "home.welcome.text3":
+      "Elke en Bram zijn met open hart in de RIIHS‑community opgenomen. Elke en Bram zijn dankbaar voor de weg die zich opent en voor de gemeenschap die hen draagt. Het is een hele eer om dit pad van vertrouwen en verdieping verder te bewandelen.",
+    "home.welcome.text4": "Dankjewel aan de RIIHS familie!",
+    "home.testimonial.text":
+      '"Ik voel me enorm empowerd! Alsof ik gesteund word door een heel leger. Alsof ik mezelf de toestemming geef om helemaal brutaal, speels, wijs mezelf te zijn!"',
+    "home.testimonial.author": "Nele",
     "impressies.gallery.alt": "Verzamiling van fotos van reconstructive",
 
     // About
@@ -360,7 +371,18 @@ export const ui = {
     "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
     "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
     "home.about.mail": "email",
-    "impressies.gallery.alt": "Verzamiling van fotos van reconstructive",
+    "home.welcome.title": "Welcome to Reconstructive.be",
+    "home.welcome.text1":
+      "A source of connection, where deep transformation through wordless bodywork breaks old patterns, and your adult self regains access to your pure core.",
+    "home.welcome.text2":
+      "We, Elke and Bram, combine our forces here. From our own practices, we bring together our experience, sensitivity, and craftsmanship into one shared field. What connects us is our deep dedication to Reconstructive and the source from which this work originated.",
+    "home.welcome.text3":
+      "Elke and Bram have been welcomed with open hearts into the RIIHS community. Elke and Bram are grateful for the path that opens before them and for the community that supports them. It is a true honor to walk this path of trust and deepening further.",
+    "home.welcome.text4": "Thank you to the RIIHS family!",
+    "home.testimonial.text":
+      '"I feel hugely empowered! As if I am supported by an entire army. As if I give myself permission to be completely bold, playful, and wise as myself!"',
+    "home.testimonial.author": "Nele",
+    "impressies.gallery.alt": "Collection of photos of reconstructive",
 
     // About
     "about.hero.title": "Discover Reconstructive: Your journey to authenticity",

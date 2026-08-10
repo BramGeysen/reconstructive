@@ -1,29 +1,19 @@
 ---
 import { Image } from "astro:assets";
 import poster from "@assets/imgs/reconstructive-poster.jpeg";
+import { getLangFromUrl, useTranslations } from "@src/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="bg-beige text-gray center">
   <div class="text-margin center">
-    <h2>Welkom bij Reconstructive.be</h2>
-    <p>
-      Een bron van verbinding, waar diepe transformatie via woordeloos
-      lichaamswerk oude patronen doorbreekt, en je volwassen deel opnieuw
-      toegang krijgt tot je pure kern.
-    </p>
-    <p>
-      Wij, Elke en Bram, bundelen hier onze krachten. Vanuit onze eigen
-      praktijken brengen we onze ervaring, gevoeligheid en vakmanschap samen in
-      één gedeeld veld. Wat ons verbindt, is onze diepe toewijding aan
-      Reconstructive en de bron waaruit dit werk is ontstaan.
-    </p>
-    <p>
-      Elke en Bram zijn met open hart in de RIIHS‑community opgenomen. Elke en
-      Bram zijn dankbaar voor de weg die zich opent en voor de gemeenschap die
-      hen draagt. Het is een hele eer om dit pad van vertrouwen en verdieping
-      verder te bewandelen.
-    </p>
-    <p>Dankjewel aan de RIIHS familie!</p>
+    <h2>{t("home.welcome.title")}</h2>
+    <p>{t("home.welcome.text1")}</p>
+    <p>{t("home.welcome.text2")}</p>
+    <p>{t("home.welcome.text3")}</p>
+    <p>{t("home.welcome.text4")}</p>
 
     <Image src={poster} alt="Reconstructive poster" />
   </div>
