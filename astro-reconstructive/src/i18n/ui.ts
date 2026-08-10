@@ -13,7 +13,6 @@ export const ui = {
   nl: {
     "nav.aanpak": "onze aanpak",
     "nav.aanbod": "aanbod",
-    "nav.impressies": "impressies",
     "nav.about": "over ons",
 
     "footer.website": "De Website is gemaakt met Astro door:",
@@ -39,10 +38,6 @@ export const ui = {
     "home.aanbod.card1.text":
       "Stap één dag buiten je vertrouwde patronen en ontdek hoeveel ruimte er ontstaat wanneer je je construct loslaat.",
     "home.aanbod.card1.alt": "Foto van een plein met een bloem in het midden",
-    "home.aanbod.card2.title": "Reconstructive (2 dagen)",
-    "home.aanbod.card2.text":
-      "Ervaar de transformerende kracht van Reconstructive en kom dichter bij je intuïtie, je vrijheid en je kern.",
-    "home.aanbod.card2.alt": "Foto van een houten pad door het hoge gras",
     "home.aanbod.card3.title": "Find your gold (6 dagen)",
     "home.aanbod.card3.text":
       "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent",
@@ -76,20 +71,7 @@ export const ui = {
       "Beweging waar je vastzat. Helderheid waar verwarring zat. Ruimte waar spanning zat.",
     "home.what.text5":
       "Je intuïtie wordt sterker, je vrijheid groter, je lichaam rustiger. Je laat oude verhalen los en maakt contact met je potentieel — voelbaar, doorleefd en blijvend aanwezig in je dagelijks leven.",
-
-    // Impressies
-    "impressies.hero.title": "Impressies",
-    "impressies.hero.description":
-      "Om je een beeld te geven hoe Reconstructive eruit kan zien, volgen hier enkele foto's.",
-    "impressies.gallery.alt": "Fotogalerij van de Reconstructive workshop",
-    "impressies.expert.title": "Jij bent de expert van je eigen reis",
-    "impressies.expert.body1":
-      "Wij geloven dat iedereen een geschenk is voor deze wereld, een expert in zijn of haar eigen leven, en dat alles wat je nodig hebt al in jezelf aanwezig is. Jij zit aan het stuur van je eigen leerproces.",
-    "impressies.expert.body2":
-      "Bij Reconstructive helpen we je om je volledige potentieel te ontplooien en authentiek te leven.",
-    "impressies.ready.title": "Ben je klaar om dichter bij je kern te komen?",
-    "impressies.ready.button":
-      "Contacteer ons voor een vrijblijvend kennismakingsgesprek",
+    "impressies.gallery.alt": "Verzamiling van fotos van reconstructive",
 
     // About
     "about.hero.title": "Ontdek Reconstructive: Jouw reis naar authenticiteit",
@@ -320,7 +302,6 @@ export const ui = {
   en: {
     "nav.aanpak": "our approach",
     "nav.aanbod": "offer",
-    "nav.impressies": "impressions",
     "nav.about": "about us",
 
     "footer.website": "The website was built with Astro by:",
@@ -357,10 +338,6 @@ export const ui = {
     "home.aanbod.card1.text":
       "Step out of your familiar patterns for a day and discover how much space is created when you let go of your construct.",
     "home.aanbod.card1.alt": "Photo of a square with a flower in the center",
-    "home.aanbod.card2.title": "Reconstructive (2 days)",
-    "home.aanbod.card2.text":
-      "Experience the transformative power of Reconstructive and get closer to your intuition, freedom, and core.",
-    "home.aanbod.card2.alt": "Photo of a wooden path through tall grass",
     "home.aanbod.card3.title": "Find your gold (6 days)",
     "home.aanbod.card3.text":
       "Embark on a profound journey through nature and body, and return to the essence of who you truly are",
@@ -383,20 +360,7 @@ export const ui = {
     "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
     "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
     "home.about.mail": "email",
-
-    // Impressies
-    "impressies.hero.title": "Impressions",
-    "impressies.hero.description":
-      "To give you an idea of what Reconstructive can look like, here are some photos.",
-    "impressies.gallery.alt": "Photo gallery of the Reconstructive workshop",
-    "impressies.expert.title": "You are the expert of your own journey",
-    "impressies.expert.body1":
-      "We believe that everyone is a gift to this world, an expert in his or her own life, and that everything you need is already present within yourself. You are in the driver's seat of your own learning process.",
-    "impressies.expert.body2":
-      "At Reconstructive, we help you to develop your full potential and live authentically.",
-    "impressies.ready.title": "Are you ready to come closer to your core?",
-    "impressies.ready.button":
-      "Contact us for a free, no-obligation conversation",
+    "impressies.gallery.alt": "Verzamiling van fotos van reconstructive",
 
     // About
     "about.hero.title": "Discover Reconstructive: Your journey to authenticity",
