@@ -1,0 +1,60 @@
+---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+import AnimationQuotes from "@components/AnimationQuotes.astro";
+import AanbodCard from "@components/aanbod/AanbodCard.astro";
+import constructImg from "@assets/imgs/constructImg.jpg";
+import mountainPathImg from "@assets/imgs/mountain-path.jpg";
+---
+
+<section class="bg-beige text-gray center">
+  <div class="container center text-align-center text-margin">
+    <h2 class="text-green">{t("home.aanbod.title")}</h2>
+    <p>{t("home.aanbod.intro1")}</p>
+    <p>{t("home.aanbod.intro2")}</p>
+    <p>{t("home.aanbod.noOrder")}</p>
+    <hr class="yellow-line" />
+    <div class="AanbodCardContainer">
+      <AanbodCard
+        title={t("home.aanbod.card1.title")}
+        text={t("home.aanbod.card1.text")}
+        link={translatePath("/aanbod#construct")}
+        alt={t("home.aanbod.card1.alt")}
+        img={constructImg}
+      />
+      <AanbodCard
+        title={t("home.aanbod.card3.title")}
+        text={t("home.aanbod.card3.text")}
+        link={translatePath("/aanbod#gold")}
+        alt={t("home.aanbod.card3.alt")}
+        img={mountainPathImg}
+      />
+    </div>
+    <hr class="yellow-line" />
+    <a class="btn green-btn big-btn" href="mailto:info@reconstructive.be"
+      >{t("home.aanbod.button")}</a
+    >
+  </div>
+  <AnimationQuotes />
+</section>
+<style>
+  .AanbodCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem;
+  }
+
+  @media (max-width: 1000px) {
+    .AanbodCardContainer {
+      grid-template-columns: 1fr;
+      margin: 1.5rem;
+    }
+  }
+</style>

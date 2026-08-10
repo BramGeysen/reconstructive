@@ -1,0 +1,103 @@
+---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+import SanityImg from "@components/SanityImg.astro";
+import { sanityClient } from "sanity:client";
+import type { SanityDocument } from "@sanity/client";
+
+const posts_query = `*[
+  _type == "post" 
+  && defined(slug.current)
+  && language == $lang
+] | order(publishedAt desc)[0...2] {
+  _id, 
+  title, 
+  slug, 
+  description,
+  language,
+  image
+}`;
+
+const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
+---
+
+<section class="bg-green text-white blog">
+  <div class="small-text-margin center">
+    <h2 class="text-align-center">{t("home.blog.title")}</h2>
+    <hr class="yellow-line" />
+    {
+      posts && posts.length === 0 && (
+        <div class="no-posts-container">
+          <p>{t("home.blog.noPosts")}</p>
+        </div>
+      )
+    }
+    {
+      posts && posts.length > 0 && (
+        <div class="col2">
+          {posts.map((post) => (
+            <a
+              href={translatePath(`/posts/${post.slug.current}`)}
+              class="center post-card-link"
+            >
+              <div class="post-card-wrapper">
+                <div>
+                  <h4 class="text-align-center">{post.title}</h4>
+                  {post.description && (
+                    <p class="text-align-center text-gray">
+                      {post.description}
+                    </p>
+                  )}
+                  {post.image && (
+                    <div class="sanity-img-container">
+                      <SanityImg
+                        src={post.image}
+                        width={600}
+                        height={400}
+                        alt={post.title}
+                        class="card-img"
+                      />
+                    </div>
+                  )}
+                </div>
+                <span class="green-btn btn">{t("common.readMore")}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      )
+    }
+    <hr class="yellow-line" />
+  </div>
+</section>
+
+<style>
+  .post-card-link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .post-card-wrapper {
+    background-color: var(--bg-white);
+    color: var(--text-green);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sanity-img-wrapper {
+    max-width: 500px;
+    width: 100%;
+  }
+</style>

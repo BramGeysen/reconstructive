@@ -30,10 +30,11 @@ export const ui = {
       "Ben je bereid om vanuit je kern te leven en om vol ja tegen het leven te kunnen zeggen?",
     "home.aanbod.title": "Ons aanbod",
     "home.aanbod.intro1":
-      "Ons aanbod bestaat uit drie formules die elkaar verdiepen: een eerste kennismakingsdag, een tweedaagse verdieping tot een innerlijke zesdaagse tocht.",
+      "Ons aanbod bestaat uit twee formules die elkaar verdiepen: een eerste kennismakingsdag tot een innerlijke zesdaagse tocht.",
     "home.aanbod.intro2":
       "Welke formule je ook kiest, elke stap brengt je dichter bij wie je werkelijk bent.",
-    "home.aanbod.noOrder": "Er is geen verplichte volgorde.",
+    "home.aanbod.noOrder":
+      "Er is geen verplichte volgorde en je kan ze los van elkaar volgen. Voel vooral waar jou energie naar toe gaat.",
     "home.aanbod.card1.title": "Voorbij je construct (1 dag)",
     "home.aanbod.card1.text":
       "Stap één dag buiten je vertrouwde patronen en ontdek hoeveel ruimte er ontstaat wanneer je je construct loslaat.",
