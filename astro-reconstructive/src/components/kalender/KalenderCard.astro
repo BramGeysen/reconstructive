@@ -1,11 +1,31 @@
 ---
+import { getLangFromUrl, useTranslatedPath } from "@src/i18n/utils";
 import type { Kalender } from "@src/types";
 
 type Props = {
   kalenderData: Kalender;
 };
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
 
 const { kalenderData } = Astro.props;
+
+let anchor = "";
+
+switch (kalenderData.type) {
+  case "Voorbij je construct":
+    anchor = "/aanbod#construct";
+  case "Find your gold":
+    anchor = "/aanbod#gold";
+    break;
+  case "Reconstructive":
+    anchor = "/aanbod#reconstructive";
+    break;
+  default:
+    anchor = "/aanbod";
+}
+
+const link = translatePath(anchor);
 ---
 
 <div class="container bg-beige text-gray">
@@ -35,7 +55,7 @@ const { kalenderData } = Astro.props;
         </p>
       )
     }
-    <a href="/" class="btn">
+    <a href={link} class="btn-link">
       <button class="green-btn">lees meer</button>
     </a>
   </div>
@@ -61,9 +81,9 @@ const { kalenderData } = Astro.props;
     margin: 10px 0;
   }
 
-  .btn {
+  .btn-link {
     position: absolute;
-    bottom: 5px;
-    left: 5px;
+    bottom: 10px;
+    left: 10px;
   }
 </style>

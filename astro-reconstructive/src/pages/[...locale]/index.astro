@@ -8,7 +8,7 @@ import {
 } from "@src/i18n/utils";
 import { sanityClient } from "sanity:client";
 import type { SanityDocument } from "@sanity/client";
-import AanbodCard from "@components/AanbodCard.astro";
+import AanbodCard from "@components/aanbod/AanbodCard.astro";
 import constructImg from "@assets/imgs/constructImg.jpg";
 import grassPathImg from "@assets/imgs/grass-path.jpg";
 import mountainPathImg from "@assets/imgs/mountain-path.jpg";
@@ -39,7 +39,7 @@ const posts_query = `*[
 const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
 ---
 
-<Layout>
+<Layout title="home">
   <section
     class="intro text-white"
     style={`background-image: url(${meerImg.src});`}

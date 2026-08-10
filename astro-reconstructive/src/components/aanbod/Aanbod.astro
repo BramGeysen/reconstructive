@@ -1,5 +1,5 @@
 ---
-import AanbodCard from "@components/AanbodCard.astro";
+import AanbodCard from "@components/aanbod/AanbodCard.astro";
 import constructImg from "@assets/imgs/constructImg.jpg";
 import grassPathImg from "@assets/imgs/grass-path.jpg";
 import mountainPathImg from "@assets/imgs/mountain-path.jpg";
@@ -198,6 +198,11 @@ import AanbodDetails from "./AanbodDetails.astro";
   .details {
     background-color: white;
     padding: 0 1rem;
+    border-radius: 10px;
+  }
+
+  .active {
+    border-radius: 0;
   }
 
   /* Details op desktop */

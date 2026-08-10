@@ -58,8 +58,8 @@ export const ui = {
     "home.about.text2":
       "Bram Geysen (links) en Elke Busschots (rechts) zijn gecertificeerde Reconstructive begeleiders.",
     "home.about.contactTitle": "Contacteer ons voor een vrijblijvend gesprek:",
-    "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 39]",
-    "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 34 ]",
+    "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
+    "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
     "home.about.mail": "mail",
     "home.what.title": "Wat is Reconstructive?",
     "home.what.text1":
@@ -258,13 +258,6 @@ export const ui = {
       "Een eerste ervaring van ruimte en vrijheid",
     "aanbod.details.construct.li3": "Meer bewustzijn over wat jou stuurt",
     "aanbod.details.construct.li4": "Nieuwsgierigheid als startpunt voor groei",
-    "aanbod.details.construct.wie":
-      "Voor nieuwsgierigen die willen proeven, hun blik willen verruimen en inzicht willen krijgen in hun patronen",
-    "aanbod.details.construct.waar": "Leuven/Heverlee",
-    "aanbod.details.construct.wanneer": "2026",
-    "aanbod.details.construct.prijs":
-      "125 euro excl BTW (incl. koffie, thee, versnapperingen en lunch)",
-    "aanbod.details.construct.aantalDeelnemers": "12",
     "aanbod.details.reconstructive.title": "Een uitnodiging",
     "aanbod.details.reconstructive.text1":
       "een uitnodiging om dichter bij jezelf te komen.",
@@ -286,14 +279,6 @@ export const ui = {
       "Doorbraak in patronen die tot nu toe bleven vastzitten",
     "aanbod.details.reconstructive.li5":
       "Een ervaring die een blijvende indruk nalaat",
-    "aanbod.details.reconstructive.wie":
-      "Voor wie voelt dat er iets vastzit en klaar is om dieper te gaan",
-    "aanbod.details.reconstructive.waar": "Leuven",
-    "aanbod.details.reconstructive.wanneer":
-      "25 - 26 juli 2026 (9-16u), De volgende 2-daagse gaat door op 17 - 18 oktober 2026 (9-16u)",
-    "aanbod.details.reconstructive.prijs":
-      "375 excl BTW (incl. Koffie, thee, versnapperingen en lunch)",
-    "aanbod.details.reconstructive.aantalDeelnemers": "8",
     "aanbod.details.gold.title": "Een thuiskomen",
     "aanbod.details.gold.text1": "Een thuiskomen bij jezelf.",
     "aanbod.details.gold.text2":
@@ -308,13 +293,7 @@ export const ui = {
     "aanbod.details.gold.li2": "belichaming",
     "aanbod.details.gold.li3": "rust",
     "aanbod.details.gold.li4": "stevig contact met je kern",
-    "aanbod.details.gold.wie":
-      "een reset wil, oude lagen wil loslaten en zijn/haar/hun blauwdruk wil herontdekken",
-    "aanbod.details.gold.waar": "Zuid - Noorwegen ",
-    "aanbod.details.gold.wanneer": "5 - 12 september 2026",
-    "aanbod.details.gold.prijs":
-      "1750 euro (excl BTW) (enkel vervoer heen en terug is niet inbegrepen: auto of vlucht naar Kristiansand)",
-    "aanbod.details.gold.aantalDeelnemers": "8",
+    "aanbod.seeDatum": "Zie datums",
 
     // AnimationQuotes
     "quotes.1":
@@ -400,8 +379,8 @@ export const ui = {
       "Carola Castillo (middle) is the founder of the school of thought and methodology of Reconstructive and founder of the Reconstructive International Integration Holistic School: ",
     "home.about.contactTitle":
       "Contact us for a free, no-obligation conversation:",
-    "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 39]",
-    "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 34 ]",
+    "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
+    "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
     "home.about.mail": "email",
 
     // Impressies
@@ -582,13 +561,6 @@ export const ui = {
     "aanbod.details.construct.li2": "A first experience of space and freedom",
     "aanbod.details.construct.li3": "More awareness about what drives you",
     "aanbod.details.construct.li4": "Curiosity as a starting point for growth",
-    "aanbod.details.construct.wie":
-      "For the curious who want to taste, broaden their gaze and gain insight into their patterns",
-    "aanbod.details.construct.waar": "Leuven/Heverlee",
-    "aanbod.details.construct.wanneer": "2026",
-    "aanbod.details.construct.prijs":
-      "125 euros excl. VAT (incl. coffee, tea, refreshments and lunch)",
-    "aanbod.details.construct.aantalDeelnemers": "12",
     "aanbod.details.reconstructive.title": "An invitation",
     "aanbod.details.reconstructive.text1":
       "an invitation to get closer to yourself.",
@@ -610,14 +582,6 @@ export const ui = {
       "Breakthrough in patterns that until now remained stuck",
     "aanbod.details.reconstructive.li5":
       "An experience that leaves a lasting impression",
-    "aanbod.details.reconstructive.wie":
-      "For those who feel that something is stuck and are ready to go deeper",
-    "aanbod.details.reconstructive.waar": "Leuven",
-    "aanbod.details.reconstructive.wanneer":
-      "July 25 - 26, 2026 (9am - 4pm), The next 2-day session will take place on October 17 - 18, 2026 (9am - 4pm)",
-    "aanbod.details.reconstructive.prijs":
-      "375 excl. VAT (incl. coffee, tea, refreshments and lunch)",
-    "aanbod.details.reconstructive.aantalDeelnemers": "8",
     "aanbod.details.gold.title": "A homecoming",
     "aanbod.details.gold.text1": "A homecoming to yourself.",
     "aanbod.details.gold.text2":
@@ -632,13 +596,7 @@ export const ui = {
     "aanbod.details.gold.li2": "embodiment",
     "aanbod.details.gold.li3": "peace",
     "aanbod.details.gold.li4": "firm contact with your core",
-    "aanbod.details.gold.wie":
-      "wants a reset, wants to let go of old layers and wants to rediscover his/her/their blueprint",
-    "aanbod.details.gold.waar": "South Norway ",
-    "aanbod.details.gold.wanneer": "September 5 - 12, 2026",
-    "aanbod.details.gold.prijs":
-      "1750 euros (excl. VAT) (only return transport is not included: car or flight to Kristiansand)",
-    "aanbod.details.gold.aantalDeelnemers": "8",
+    "aanbod.seeDatum": "See dates",
 
     // Posts
     "posts.title": "Posts",

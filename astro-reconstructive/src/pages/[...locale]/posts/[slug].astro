@@ -48,7 +48,7 @@ const postImageUrl = post.image
   : null;
 ---
 
-<Layout>
+<Layout title={post.slug}>
   <section class="bg-beige text-gray">
     <a href={translatePath("/posts")}>
       <button class="green-btn"> &larr; {t("post.back")} </button>

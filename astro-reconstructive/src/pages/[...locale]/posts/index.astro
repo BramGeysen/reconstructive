@@ -22,7 +22,7 @@ const POSTS_QUERY = `*[
 const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY, { lang });
 ---
 
-<Layout>
+<Layout title="blog">
   <section class="bg-beige">
     <h1 class="text-align-center text-green">{t("posts.title")}</h1>
     <div class="container">

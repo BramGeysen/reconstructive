@@ -1,5 +1,9 @@
 ---
-import { getLangFromUrl, useTranslations } from "@src/i18n/utils";
+import {
+  getLangFromUrl,
+  useTranslatedPath,
+  useTranslations,
+} from "@src/i18n/utils";
 
 interface Props {
   title: string;
@@ -11,6 +15,7 @@ const { title, text, li } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <div>
@@ -22,4 +27,7 @@ const t = useTranslations(lang);
   <ul>
     {li.map((i) => <li>{i}</li>)}
   </ul>
+  <a href={translatePath("/aanbod#kalender")} class="center"
+    ><span class="green-btn btn">{t("aanbod.seeDatum")}</span></a
+  >
 </div>

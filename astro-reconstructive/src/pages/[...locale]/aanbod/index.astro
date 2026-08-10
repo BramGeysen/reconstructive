@@ -6,7 +6,7 @@ import {
   useTranslations,
   useTranslatedPath,
 } from "@src/i18n/utils";
-import Aanbod from "@components/Aanbod.astro";
+import Aanbod from "@components/aanbod/Aanbod.astro";
 import KalenderContainer from "@components/kalender/KalenderContainer.astro";
 
 export { getStaticPaths };
@@ -15,7 +15,7 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<Layout>
+<Layout title="aanbod">
   <section class="bg-green text-white">
     <div class="text-margin">
       <h1 class="text-align-center">{t("aanbod.hero.title")}</h1>
@@ -34,7 +34,7 @@ const translatePath = useTranslatedPath(lang);
   <section class="bg-beige text-gray">
     <Aanbod />
   </section>
-  <section class="bg-green text-white">
+  <section class="bg-green text-white" id="kalender">
     <KalenderContainer />
   </section>
   <section class="contact bg-beige text-gray center">
