@@ -84,7 +84,10 @@ import AanbodDetails from "./AanbodDetails.astro";
         container.style.setProperty("--active-index", index);
       };
 
-      const setActiveCard = (contentName: string, shouldScroll: boolean = false) => {
+      const setActiveCard = (
+        contentName: string,
+        shouldScroll: boolean = false,
+      ) => {
         const targetContent = contentName || "construct";
 
         cardWrappers.forEach((cw) => {
@@ -156,7 +159,10 @@ import AanbodDetails from "./AanbodDetails.astro";
         const href = anchor.getAttribute("href");
         if (href && (href.includes("#construct") || href.includes("#gold"))) {
           const hashMatch = href.split("#")[1];
-          if (hashMatch && (hashMatch === "construct" || hashMatch === "gold")) {
+          if (
+            hashMatch &&
+            (hashMatch === "construct" || hashMatch === "gold")
+          ) {
             const targetPath = anchor.pathname.replace(/\/$/, "");
             const currentPath = window.location.pathname.replace(/\/$/, "");
 

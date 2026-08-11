@@ -1,0 +1,278 @@
+{
+  "nav": {
+    "aanpak": "onze aanpak",
+    "aanbod": "aanbod",
+    "about": "over ons"
+  },
+  "footer": {
+    "website": "De Website is gemaakt met Astro door:"
+  },
+  "common": {
+    "readMore": "Lees meer"
+  },
+  "home": {
+    "hero": {
+      "title": "Reconstructive: beleef vanuit je kern"
+    },
+    "quote": {
+      "author": "Carl Jung",
+      "text": "\"The privilege of a lifetime is to become who you truly are\""
+    },
+    "cta": {
+      "title": "Ben je bereid om vanuit je kern te leven en om vol ja tegen het leven te kunnen zeggen?"
+    },
+    "aanbod": {
+      "title": "Ons aanbod",
+      "intro1": "Ons aanbod bestaat uit twee formules die elkaar verdiepen: een eerste kennismakingsdag tot een innerlijke zesdaagse tocht.",
+      "intro2": "Welke formule je ook kiest, elke stap brengt je dichter bij wie je werkelijk bent.",
+      "noOrder": "Er is geen verplichte volgorde en je kan ze los van elkaar volgen. Voel vooral waar jou energie naar toe gaat.",
+      "card1": {
+        "title": "Voorbij je construct (1 dag)",
+        "text": "Stap één dag buiten je vertrouwde patronen en ontdek hoeveel ruimte er ontstaat wanneer je je construct loslaat.",
+        "alt": "Foto van een plein met een bloem in het midden"
+      },
+      "card3": {
+        "title": "Find your gold (6 dagen)",
+        "text": "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent",
+        "alt": "Foto van een houten pad door een dor veld met bergen in de achtergrond"
+      },
+      "button": "Gratis kennismakingsgesprek"
+    },
+    "blog": {
+      "title": "Blog",
+      "noPosts": "Er zijn momenteel geen berichten beschikbaar."
+    },
+    "about": {
+      "contactTitle": "Contacteer ons voor een vrijblijvend gesprek:",
+      "elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
+      "bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
+      "photo": "(foto: Carola Castillo(midden), grondlegster en directeur van RIIHS.)",
+      "mail": "mail",
+      "groupPhotoAlt": "groepsfoto met Bram Geysen Elke Busschots en Carola Castillo"
+    },
+    "what": {
+      "title": "Wat is Reconstructive?",
+      "text1": "Reconstructive is krachtig, lichaamsgericht opstellingswerk dat voorbij woorden gaat. Zonder taal valt ook de perceptie van anderen weg. Wat overblijft, is het lichaam dat toont wat er écht speelt: oude reflexen, beschermingslagen en bewegingen die onder de oppervlakte leven. Geen analyse, geen verhaal — alleen directe ervaring",
+      "title1": "Voor wie is het?",
+      "text2": "Voor iedereen die voelt dat er iets wil verschuiven, maar merkt dat praten of denken niet verder brengt. Voor wie vastzit in patronen (pleasen, controleren, altijd bezig zijn), meer intuïtie wil ervaren of dichter bij zijn kern wil komen. Ook voor mensen die al veel innerlijk werk deden en voelen dat het lichaam de volgende laag wil tonen.",
+      "title2": "Wat maakt het uniek?",
+      "text3": "Reconstructive werkt volledig woordeloos. Daardoor ontstaat een zuivere spiegel: geen projectie, geen interpretatie, geen invulling. In het energetische groepsveld spiegelen beweging en lichaamstaal elkaar. Reconstructive werkt met volwassen deel, het deel dat kan dragen, kiezen en aanwezig blijven wanneer oude reflexen opduiken.",
+      "title3": "Wat levert het op?",
+      "text4": "Beweging waar je vastzat. Helderheid waar verwarring zat. Ruimte waar spanning zat.",
+      "text5": "Je intuïtie wordt sterker, je vrijheid groter, je lichaam rustiger. Je laat oude verhalen los en maakt contact met je potentieel — voelbaar, doorleefd en blijvend aanwezig in je dagelijks leven."
+    },
+    "welcome": {
+      "title": "Welkom bij Reconstructive.be",
+      "text1": "Een bron van verbinding, waar diepe transformatie via woordeloos lichaamswerk oude patronen doorbreekt, en je volwassen deel opnieuw toegang krijgt tot je pure kern.",
+      "text2": "Wij, Elke en Bram, bundelen hier onze krachten. Vanuit onze eigen praktijken brengen we onze ervaring, gevoeligheid en vakmanschap samen in één gedeeld veld. Wat ons verbindt, is onze diepe toewijding aan Reconstructive en de bron waaruit dit werk is ontstaan.",
+      "text3": "Elke en Bram zijn met open hart in de RIIHS‑community opgenomen. Elke en Bram zijn dankbaar voor de weg die zich opent en voor de gemeenschap die hen draagt. Het is een hele eer om dit pad van vertrouwen en verdieping verder te bewandelen.",
+      "text4": "Dankjewel aan de RIIHS familie!"
+    },
+    "testimonial": {
+      "text": "\"Ik voel me enorm empowerd! Alsof ik gesteund word door een heel leger. Alsof ik mezelf de toestemming geef om helemaal brutaal, speels, wijs mezelf te zijn!\"",
+      "author": "Nele"
+    }
+  },
+  "impressies": {
+    "gallery": {
+      "alt": "Verzamiling van fotos van reconstructive"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Ontdek Reconstructive: Jouw reis naar authenticiteit",
+      "description": "Bij Reconstructive begeleiden we je naar leven vanuit je kern — authentiek, intuïtief en vrij. Ontdek een nieuwe manier van kijken en groeien. Ben je klaar om je ware zelf te onthullen?"
+    },
+    "elke": {
+      "title": "Elke",
+      "alt": "Profielfoto van Elke Busschots",
+      "intro": "Al meer dan vijftien jaar begeleid ik mensen die verlangen naar meer helderheid, innerlijke stevigheid en een authentieke manier van leven en werken.",
+      "strengthTitle": "Mijn kracht ligt in:",
+      "strength1": "Snel tot de kern komen",
+      "strength2": "Patronen zichtbaar maken die je zelf niet meer ziet",
+      "strength3": "Veiligheid creëren waarin je écht kunt zakken",
+      "strength4": "Helderheid brengen in complexe innerlijke processen",
+      "strength5": "Je begeleiden naar keuzes die kloppen met jouw essentie",
+      "mission": "Mijn missie? Mensen en organisaties terugbrengen naar hun kern, zodat ze kunnen leven, werken en leiden vanuit wie ze werkelijk zijn."
+    },
+    "bram": {
+      "title": "Bram",
+      "alt": "Profielfoto van bram geysen",
+      "intro1": "Ik begeleid mensen vanuit de ervaring en het besef dat echte transformatie pas begint wanneer het hart durft te smelten.",
+      "intro2": "Pas wanneer het hart zich opent, wordt de moed wakker die nodig is om te veranderen. Niet de moed van hard vechten of volhouden, maar de stille, innerlijke moed die ontstaat wanneer je jezelf toestaat om te voelen wat echt klopt.",
+      "intro3": "In mijn werk nodig ik anderen uit om diezelfde beweging te maken: van hoofd naar hart, van spanning naar ontspanning, van controle naar loslaten. Mijn aanpak is geworteld in bewustzijn, adem, lichaamswerk en de stille hartsintelligentie die in ons allemaal aanwezig is.",
+      "outro": "Mijn aanpak is zacht, eerlijk en praktisch."
+    },
+    "values": {
+      "title": "Onze kernwaarden: Jij bent de expert van je eigen reis",
+      "body1": "Wij geloven dat iedereen een geschenk is voor deze wereld, een expert in zijn of haar eigen leven, en dat alles wat je nodig hebt al in jezelf aanwezig is. Jij zit aan het stuur van je eigen leerproces.",
+      "body2": "Bij Reconstructive helpen we je om je volledige potentieel te ontplooien en authentiek te leven."
+    },
+    "origin": {
+      "title": "De oorsprong",
+      "groupPhotoAlt": "groepsfoto met Bram Geysen Elke Busschots en Carola Castillo",
+      "body": "Carola Castillo is de grondlegster van de methodiek 'Reconstructive'. Zij is oprichtster van Reconstructive International Integratie Holistic School.",
+      "logoAlt": "Logo International Integration Holistic School",
+      "buttonText": "Reconstructive International Integrative Holistic School"
+    }
+  },
+  "aanpak": {
+    "hero": {
+      "title": "Reconstructive: een reis terug naar jezelf",
+      "text1": "Reconstructive vertrekt vanuit een eenvoudig maar diepgaand principe: alles in ons leven beweegt volgens patronen. Sommige dragen ons, andere beperken ons. In dit werk onderzoeken we hoe die patronen ontstaan, hoe ze zich vastzetten in het lichaam en hoe we ze opnieuw kunnen openen zodat energie, intuïtie en creatiekracht vrijer kunnen stromen. Op die manier kunnen de inzichten doorwerken in het dagelijkse leven en ontstaat duurzame verandering.",
+      "text2": "Deze vijf pijlers vormen de basis van onze aanpak en tonen hoe Reconstructive je begeleidt van overleven naar belichaamde heelheid.",
+      "text3": "Deze reis brengt je van overleven naar vol leven. Het is een proces van emotionele volwassenwording en heling. Je innerlijke kracht spreekt jou aan en nodigt je uit om verantwoordelijkheid te nemen over je helingsproces."
+    },
+    "kern": {
+      "title": "De kern van deze methode:",
+      "subtitle": "\"Een ontmoeting met je kern, je uitdaging en je potentieel\""
+    },
+    "point1": {
+      "title": "1. Natuur & energie: ",
+      "text1": "Patronen zijn overal in de natuur aanwezig — spiralen, ritmes, structuren.",
+      "text2": "Patronen weerspiegelen hoe levensenergie beweegt: van binnen naar buiten, van essentie naar vorm.",
+      "text3": "Zonder structuur blijft energie puur potentieel, maar zodra ze zich via patronen, structuren en ritmes ordent, wordt ze voelbaar, waarneembaar en scheppend.",
+      "text4": "Wanneer we deze natuurlijke beweging herkennen in onszelf, wordt voelbaar waar onze levensstroom vrij stroomt en waar ze blokkeert.",
+      "imgAlt": "Zonnebloem met spiraalpatroon"
+    },
+    "point2": {
+      "title": "2. Overleven & identiteit: ",
+      "text1": "In onze eerste levensjaren vormen we overlevingspatronen die ons houvast en veiligheid geven. Ze worden de basis van onze identiteit — wie we denken te moeten zijn.",
+      "text2": "Familie, cultuur en vroege ervaringen, inclusief trauma, vormen structuren die we later onbewust blijven herhalen. Vooral wanneer het leven uitdagend wordt, grijpen we terug naar deze oude strategieën.",
+      "text3": "In onze eerste zes levensjaren ontwikkelen we patronen die ons houvast, voorspelbaarheid en veiligheid bieden. We leren de strategieën die ons helpen overeind te blijven en die onze identiteit vormgeven. Die patronen vormen de basis waarop we later, vaak onbewust, blijven terugvallen, vooral wanneer het leven moeilijk wordt.",
+      "imgAlt": "Houten poppetjes die symbool staan voor familie en patronen"
+    },
+    "point3": {
+      "title": "3. Doorbreken & bewustwording: ",
+      "text1": "Wanneer oude patronen beginnen te knellen, ontstaat de kans om te zien wat ons werkelijk tegenhoudt.",
+      "text2": "In het verdere opgroeien merken we dat jobs, relaties, keuzes, nieuwe ervaringen en conflicten barstjes in dit construct brengen. Ze laten ons verschillen zien en nodigen ons uit om met een ruimere, volwassen blik te kijken.",
+      "text3": "Waar het kind in ons vaak wil vasthouden aan gelijk of zekerheid, kan de volwassene deze momenten zien als kansen voor groei en verrijking.",
+      "text4": "Vragen zoals \"Wie ben ik écht? Wie ben ik voorbij mijn rol? Waarom loop ik vast?\" komen dan voorbij.",
+      "text5": "Dit vraagt om openheid, nieuwsgierigheid en de bereidheid om voorbij het bekende te bewegen.",
+      "imgAlt": "Illustratie van pijn en doorbreken"
+    },
+    "point4": {
+      "title": "4. Belichaming & creatie: ",
+      "text1": "Door nieuwe patronen in het lichaam te verankeren, ontstaat ruimte voor bewuste creatie vanuit onze kern.",
+      "text2": "Echte wijsheid ontstaat wanneer ons lichaam iets ten diepste heeft ervaren. In ons hoofd hebben we het allemaal al overdacht en lopen we in dezelfde cirkel. Werkelijke verandering begint dan ook niet in het hoofd, maar in het lichaam. Wanneer we uit het denken stappen en in ons lichaam zakken, ontstaat er ruimte voor nieuwe ervaringen, verbinding en inzicht.",
+      "text3": "Potentie, energie die tot nu toe onzichtbaar of verborgen bleef, mag zich nu via het lichaam tonen.",
+      "text4": "Ervaar hoe energie kracht geeft en intentie richting.",
+      "text5": "Wie blokkades wil opheffen en vrijer wil leven, ervaart hoe het is om met beide te werken.",
+      "imgAlt": "Zandengel die staat voor belichaming en overgave"
+    },
+    "point5": {
+      "title": "5. Heelheid & integratie: ",
+      "text1": "Wanneer kinds- en volwassen delen samengaan, worden patronen levensdienend en ontstaat innerlijke heelheid.",
+      "text2": "Vanuit die doorleefde wijsheid en innerlijke ruimte kunnen we creëren. Het wordt bewust creëren vanuit intuïtie en helderheid, vanuit onze kern, uitgelijnd.",
+      "text3": "De volwassene en het kind in ons kunnen samenkomen in een gevoel van heelheid, waarbij de kwaliteiten van het kind op een veilige manier gedragen worden door onze volwassen delen en op een een bewuste manier tot uiting komen in de wereld.",
+      "imgAlt": "Witte bloem als symbool van heelheid en integratie"
+    },
+    "journey": {
+      "title": "\"Your journey to freedom\""
+    },
+    "ready": {
+      "title": "Ben je klaar om dichter bij je kern te komen?",
+      "body1": "We werken graag samen met mensen die nieuwsgierig zijn, het gevoel hebben dat er iets in de weg zit maar graag vooruit willen, en bereid zijn om vanuit vertrouwen en onzekerheid nieuwe ervaringen te omarmen. Als je als volwassen deel de regie in eigen handen wilt nemen, je kindsdeel en volwassen deel zorgvuldig wilt verkennen, en heel wilt worden door je ware kern te ontdekken, dan is Reconstructive iets voor jou.",
+      "body2": "Wat onze manier van werken onderscheidt, is de diepgaande menselijke ontmoeting. We bieden een kwaliteit van aanwezigheid, een heldere blik en een zacht hart. We brengen zowel lichtheid als diepgang in elke sessie, waardoor we je helpen nieuwe perspectieven en vrijheid te ontdekken.",
+      "button": "Lees meer over ons aanbod"
+    }
+  },
+  "aanbod": {
+    "details": {
+      "practical": "Praktische informatie",
+      "benefits": "Wat levert het op:",
+      "forWho": "Voor wie:",
+      "where": "Waar:",
+      "when": "Wanneer:",
+      "price": "Prijs:",
+      "maxParticipants": "Max aantal deelnemers:",
+      "construct": {
+        "title": "Een ontmoeting",
+        "text1": " Een eerste ontmoeting met je essentie en met de reconstructive methode.",
+        "text2": "Voor wie wilt proeven van wat er leeft voorbij je patronen",
+        "text3": "Merk jij ook dat sommigen vrijer leven dan jij? Dat als jij iets wil veranderen, er meteen een stem in jouw hoofd zegt, 'ja maar, dat kan niet want...' Die stemmetjes bepalen mee hoe groot jouw vrijheid aanvoelt.",
+        "text4": "Tijdens deze initiatiedag stap je uit je vertrouwde kaders. Via belevings-oefeningen en de wijsheid van de natuur word je uitgenodigd om buiten je construct te stappen. Het is alsof je een raam opent dat lang dicht zat. Er komt licht binnen. Ruimte. Nieuwsgierigheid.",
+        "text5": "De natuur vindt altijd een weg ook in complexe omstandigheden. En precies dat herinnert jou eraan dat ook jij kunt bewegen, verschuiven, openen.",
+        "li1": "Ruimer perspectief op je eigen patronen",
+        "li2": "Een eerste ervaring van ruimte en vrijheid",
+        "li3": "Meer bewustzijn over wat jou stuurt",
+        "li4": "Nieuwsgierigheid als startpunt voor groei"
+      },
+      "reconstructive": {
+        "title": "Een uitnodiging",
+        "text1": "een uitnodiging om dichter bij jezelf te komen.",
+        "text2": "Soms voel je dat er nog iets in de weg zit. Iets wat niet via het hoofd loskomt, maar via het lichaam wil gezien worden.",
+        "text3": "Vaak zijn het diepgewortelde patronen, oude verhalen, ingehouden emoties en overlevingsstrategieën die ons onbewust ervan weerhouden om ons potentieel ten volle te leven. Door ermee te werken in het lichaam komt er beweging, helderheid en richting.",
+        "text4": "Via Reconstructive wordt het denken opzijgezet. Wat overblijft is het lichaam en wat het je te vertellen heeft.",
+        "text5": "We werken in kleine groepjes, zonder taal. We bouwen samen een energetisch veld waaruit beweging ontstaat. De groep is een spiegelend veld: wat je bij anderen ziet, raakt iets in jou. Wat jij laat zien, opent iets bij hen.",
+        "text6": "Reconstructive is geen therapie, maar een uitnodiging om je over te geven aan wat zich in jou wil tonen. Zonder verhaal. Zonder analyse. Alleen een directe ontmoeting met jezelf en je volle potentieel.",
+        "li1": "Ruimer perspectief op je eigen patronen",
+        "li2": "Meer vrijheid",
+        "li3": "Nieuwe inzichten",
+        "li4": "Doorbraak in patronen die tot nu toe bleven vastzitten",
+        "li5": "Een ervaring die een blijvende indruk nalaat"
+      },
+      "gold": {
+        "title": "Een thuiskomen",
+        "text1": "Een thuiskomen bij jezelf.",
+        "text2": "Deze retreat is een innerlijke tocht waarbij we laag na laag dichterbij jouw blauwdruk komen, zodat zichtbaar wordt wie je altijd al was.",
+        "text3": "Elke dag trekken we de natuur in. Ze spiegelt je zonder oordeel: waar je nog vasthoudt, waar je mag verzachten, waar je mag openen. De natuur laat zien wat je lichaam al wist, maar wat je hoofd misschien nog niet durfde te erkennen.",
+        "text4": "Reconstructive maakt zichtbaar wat je onderweg tegenkomt: oude patronen, beschermingslagen, ingehouden emoties. Door ermee te werken in het lichaam komt er beweging, helderheid en richting. Je voelt hoe je dichter bij je blauwdruk komt dat stille, diepe weten van wie jij in essentie bent.",
+        "text5": "De groep wordt een bedding. Je hoeft het niet alleen te doen, maar je maakt wel je eigen innerlijke reis.",
+        "li1": "Meer helderheid",
+        "li2": "belichaming",
+        "li3": "rust",
+        "li4": "stevig contact met je kern"
+      }
+    },
+    "hero": {
+      "title": "Beleef vanuit je kern",
+      "body": "Er zijn momenten in het leven waarop je voelt dat er meer mogelijk is. Dat je lichaam iets weet wat je hoofd nog niet kan volgen. Dat er onder de dagelijkse patronen een diepere laag wacht om gezien te worden. Reconstructive is een uitnodiging om die laag te ontmoeten.",
+      "button": "Lees meer over onze aanpak",
+      "outro": "Ontdek, verdiep of transformeer en beweeg dichter naar je essentie"
+    },
+    "footer": {
+      "text1": "Misschien is het een eerste nieuwsgierigheid.",
+      "text2": "Misschien een verlangen naar dieper contact met jezelf.",
+      "text3": "Misschien voel je dat het tijd is om terug te keren naar je essentie.",
+      "text4": "Welke formule je ook kiest, elke stap brengt je dichter bij wie je werkelijk bent.",
+      "button": "Contacteer ons voor een vrijblijvende kennismakinggesprek"
+    },
+    "cards": {
+      "construct": {
+        "title": "Voorbij je construct (1 dag)",
+        "text": "Stap één dag buiten je vertrouwde patronen en ontdek hoeveel ruimte er ontstaat wanneer je je construct loslaat.",
+        "alt": "Foto van een plein met een bloem in het midden"
+      },
+      "reconstructive": {
+        "title": "Reconstructive (2 dagen)",
+        "text": "Ervaar de transformerend kracht van Reconstructive en kom dichter bij je intuïtie, je vrijheid en je kern.",
+        "alt": "Foto van een houte pad door het hoge grass"
+      },
+      "gold": {
+        "title": "Find your gold (6 dagen)",
+        "text": "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent",
+        "alt": "Foto van een houten pad door een dor veld met bergen in de achtergrond"
+      }
+    },
+    "seeDatum": "Zie datums"
+  },
+  "quotes": {
+    "1": "\"Waar ik vroeger zweeg, spreek ik nu authentiek. En precies daardoor word ik gehoord.\"",
+    "2": "“Anderen zagen het eerst: ik draag nu meer lichtheid en ruimte met me mee.”"
+  },
+  "posts": {
+    "title": "Posts",
+    "noPosts": "Er zijn momenteel geen berichten beschikbaar"
+  },
+  "post": {
+    "back": "Terug naar posts",
+    "published": "Gepubliceerd:"
+  },
+  "error404": {
+    "title": "404 - Pagina niet gevonden",
+    "header": "Oeps! Pagina niet gevonden",
+    "message": "Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.",
+    "back": "Terug naar home"
+  }
+}

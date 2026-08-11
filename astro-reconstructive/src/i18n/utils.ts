@@ -1,4 +1,43 @@
-import { defaultLang, ui, showDefaultLang, languages } from "./ui";
+import defaultLangJson from "./en.json";
+import nlLangJson from "./nl.json";
+
+export const defaultLang = "nl";
+export const showDefaultLang = false;
+
+export const languages = {
+  en: "English",
+  nl: "Nederlands",
+} as const;
+
+// Combined dictionary containing your JSON files
+export const ui = {
+  en: defaultLangJson,
+  nl: nlLangJson,
+} as const;
+
+export type Lang = keyof typeof ui;
+
+// Type helper to extract dot-notation paths (e.g. "home.quote.author")
+type NestedKeys<T> = T extends object
+  ? {
+      [K in keyof T & string]: T[K] extends object
+        ? `${K}` | `${K}.${NestedKeys<T[K]>}`
+        : `${K}`;
+    }[keyof T & string]
+  : never;
+
+export type TranslationKey = NestedKeys<typeof defaultLangJson>;
+
+// Helper function to dynamically access nested keys safely
+function getNestedValue(
+  obj: Record<string, any>,
+  keyPath: string,
+): string | undefined {
+  const result = keyPath
+    .split(".")
+    .reduce<any>((acc, part) => acc && acc[part], obj);
+  return typeof result === "string" ? result : undefined;
+}
 
 export function getStaticPaths() {
   return Object.keys(languages).map((locale) => ({
@@ -6,24 +45,29 @@ export function getStaticPaths() {
   }));
 }
 
-export function getLangFromUrl(url: URL) {
+export function getLangFromUrl(url: URL): Lang {
   const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   let pathname = url.pathname;
   if (base && pathname.startsWith(base)) {
     pathname = pathname.slice(base.length);
   }
   const [, lang] = pathname.split("/");
-  if (lang in ui) return lang as keyof typeof ui;
-  return defaultLang;
+  if (lang in ui) return lang as Lang;
+  return defaultLang as Lang;
 }
 
-export function useTranslations(lang: keyof typeof ui) {
-  return function t(key: keyof (typeof ui)[typeof defaultLang]) {
-    return ui[lang][key] || ui[defaultLang][key];
+export function useTranslations(lang: Lang) {
+  return function t(key: TranslationKey): string {
+    const translation = getNestedValue(ui[lang], key);
+    if (translation !== undefined) return translation;
+
+    // Fallback to default language if key isn't found in current language
+    const fallback = getNestedValue(ui[defaultLang], key);
+    return fallback ?? key;
   };
 }
 
-export function useTranslatedPath(lang: keyof typeof ui) {
+export function useTranslatedPath(lang: Lang) {
   return function translatePath(path: string, l: string = lang) {
     const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 

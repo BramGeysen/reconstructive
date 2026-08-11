@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "aanpak": "our approach",
+    "aanbod": "offer",
+    "about": "about us"
+  },
+  "footer": {
+    "website": "The website was built with Astro by:"
+  },
+  "common": {
+    "readMore": "Read more"
+  },
+  "home": {
+    "hero": {
+      "title": "Reconstructive: experience from your core"
+    },
+    "quote": {
+      "author": "Carl Jung",
+      "text": "\"The privilege of a lifetime is to become who you truly are\""
+    },
+    "intro": {
+      "title": "Break your patterns and live more from your core!",
+      "body": "Reconstructive is a powerful body-oriented method that allows your <strong>intuition, freedom</strong> and <strong>clarity</strong> to flow more.",
+      "point1": {
+        "title": "Breaking free from old patterns and thinking.",
+        "body": "Reconstructive helps you release unconscious patterns, blocks and fixed ideas, and opens the way to new movement and possibilities."
+      },
+      "point2": {
+        "title": "Returning to the body and experience.",
+        "body": "It is a method beyond the mind, allowing more space for the body and what it has to tell you."
+      },
+      "point3": {
+        "title": "Space for intuition, freedom and clarity.",
+        "body": "The group forms a reflecting field. What you see in others touches something in you. What you reveal opens up something in them. By creating space, lived-through insights emerge via the body, bringing you closer to your inner clarity and your own essence."
+      }
+    },
+    "cta": {
+      "title": "Are you ready to live from your core and say a full 'yes' to life?"
+    },
+    "aanbod": {
+      "title": "Our offer",
+      "intro1": "Our offer consists of three formats that deepen each other: an initial introductory day, a two-day deepening, and an inner six-day journey.",
+      "intro2": "Whichever format you choose, each step brings you closer to who you truly are.",
+      "noOrder": "There is no mandatory order.",
+      "card1": {
+        "title": "Beyond your construct (1 day)",
+        "text": "Step out of your familiar patterns for a day and discover how much space is created when you let go of your construct.",
+        "alt": "Photo of a square with a flower in the center"
+      },
+      "card3": {
+        "title": "Find your gold (6 days)",
+        "text": "Embark on a profound journey through nature and body, and return to the essence of who you truly are",
+        "alt": "Photo of a wooden path through a dry field with mountains in the background"
+      },
+      "button": "Free introductory conversation"
+    },
+    "blog": {
+      "title": "Blog",
+      "intro": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nihil. Explicabo doloribus voluptates dolores quae iusto sapiente vel numquam. Corrupti animi autem fugiat nulla quibusdam voluptatem nesciunt obcaecati maiores soluta.",
+      "noPosts": "There are currently no posts available."
+    },
+    "about": {
+      "contactTitle": "Contact us for a free, no-obligation conversation:",
+      "elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
+      "bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
+      "mail": "email",
+      "photo": "“(Photo: Carola Castillo (center), founder and director of RIIHS.)”",
+      "groupPhotoAlt": "group photo with Bram Geysen, Elke Busschots and Carola Castillo"
+    },
+    "what": {
+      "title": "What is Reconstructive?",
+      "text1": "Reconstructive is powerful, body-oriented constellation work that goes beyond words. Without language, the perception of others also falls away. What remains is the body showing what is truly going on: old reflexes, protective layers, and movements living beneath the surface. No analysis, no story — only direct experience.",
+      "title1": "Who is it for?",
+      "text2": "For anyone who feels that something wants to shift, but notices that talking or thinking no longer helps. For those stuck in patterns (pleasing, controlling, always staying busy), wanting to experience more intuition or get closer to their core. Also for people who have already done a lot of inner work and feel that the body wants to reveal the next layer.",
+      "title2": "What makes it unique?",
+      "text3": "Reconstructive works completely wordlessly. This creates a pure mirror: no projection, no interpretation, no assumptions. In the energetic group field, movement and body language mirror each other. Reconstructive works with the adult part, the part that can carry, choose, and remain present when old reflexes emerge.",
+      "title3": "What does it deliver?",
+      "text4": "Movement where you were stuck. Clarity where there was confusion. Space where there was tension.",
+      "text5": "Your intuition grows stronger, your freedom greater, your body calmer. You let go of old stories and connect with your potential — tangible, lived-through, and permanently present in your daily life."
+    },
+    "welcome": {
+      "title": "Welcome to Reconstructive.be",
+      "text1": "A source of connection, where deep transformation through wordless bodywork breaks old patterns, and your adult self regains access to your pure core.",
+      "text2": "We, Elke and Bram, combine our forces here. From our own practices, we bring together our experience, sensitivity, and craftsmanship into one shared field. What connects us is our deep dedication to Reconstructive and the source from which this work originated.",
+      "text3": "Elke and Bram have been welcomed with open hearts into the RIIHS community. Elke and Bram are grateful for the path that opens before them and for the community that supports them. It is a true honor to walk this path of trust and deepening further.",
+      "text4": "Thank you to the RIIHS family!"
+    },
+    "testimonial": {
+      "text": "\"I feel hugely empowered! As if I am supported by an entire army. As if I give myself permission to be completely bold, playful, and wise as myself!\"",
+      "author": "Nele"
+    }
+  },
+  "impressies": {
+    "gallery": {
+      "alt": "Collection of photos of reconstructive"
+    }
+  },
+  "quotes": {
+    "1": "\"Where I used to stay silent, I now speak authentically. And that is precisely why I am heard.\"",
+    "2": "\"Others noticed it first: I now carry more lightness and space with me.\""
+  },
+  "about": {
+    "hero": {
+      "title": "Discover Reconstructive: Your journey to authenticity",
+      "description": "At Reconstructive, we guide you to live from your core — authentic, intuitive and free. Discover a new way of looking and growing. Are you ready to reveal your true self?"
+    },
+    "banner": {
+      "text": "Reconstructive.be is a collaboration between Elke Busschots and Bram Geysen, who each have their own practice. They have completed the required training at the RIIHS and work closely with the International Reconstructive School."
+    },
+    "elke": {
+      "title": "Elke",
+      "alt": "Profile photo of Elke Busschots",
+      "intro": "For more than fifteen years, I have been guiding people who long for more clarity, inner strength, and an authentic way of living and working.",
+      "strengthTitle": "My strength lies in:",
+      "strength1": "Getting to the core quickly",
+      "strength2": "Making patterns visible that you no longer see yourself",
+      "strength3": "Creating a safe space where you can truly settle down",
+      "strength4": "Bringing clarity to complex inner processes",
+      "strength5": "Guiding you towards choices that align with your essence",
+      "mission": "My mission? Bringing people and organizations back to their core, so they can live, work and lead from who they truly are."
+    },
+    "bram": {
+      "title": "Bram",
+      "alt": "Profile photo of Bram Geysen",
+      "intro1": "I guide people from the experience and realization that true transformation only begins when the heart dares to melt.",
+      "intro2": "Only when the heart opens up does the courage needed to change awaken. Not the courage of fighting hard or persevering, but the quiet, inner courage that arises when you allow yourself to feel what is truly right.",
+      "intro3": "In my work, I invite others to make that same shift: from head to heart, from tension to relaxation, from control to letting go. My approach is rooted in awareness, breath, bodywork, and the quiet heart intelligence present in all of us.",
+      "outro": "My approach is gentle, honest, and practical."
+    },
+    "values": {
+      "title": "Our core values: You are the expert of your own journey",
+      "body1": "We believe that everyone is a gift to this world, an expert in his or her own life, and that everything you need is already present within yourself. You are in the driver's seat of your own learning process.",
+      "body2": "At Reconstructive, we help you to develop your full potential and live authentically."
+    },
+    "origin": {
+      "title": "The origin",
+      "groupPhotoAlt": "group photo with Bram Geysen, Elke Busschots and Carola Castillo",
+      "body": "Carola Castillo is the founder of the methodology 'Reconstructive'. She is the founder of the Reconstructive International Integration Holistic School.",
+      "logoAlt": "Logo International Integration Holistic School",
+      "buttonText": "Reconstructive International Integrative Holistic School"
+    }
+  },
+  "aanpak": {
+    "hero": {
+      "title": "Reconstructive: a journey back to yourself.",
+      "text1": "Reconstructive is based on a simple yet profound principle: everything in our lives moves according to patterns. Some support us, others limit us. In this work, we explore how those patterns originate, how they anchor in the body, and how we can open them up again so that energy, intuition, and creative power can flow more freely. In this way, insights integrate into daily life and create lasting change.",
+      "text2": "These five pillars form the foundation of our approach and show how Reconstructive guides you from survival to embodied wholeness.",
+      "text3": "This journey takes you from survival to living fully. It is a process of emotional maturation and healing. Your inner strength calls upon you and invites you to take responsibility for your healing process.",
+      "body1": "Reconstructive offers a unique path to living from your core, your authenticity and your intuition. It invites you to question the constructions you have built up, often unconsciously, from early impressions. In this way, the freedom that lies behind them becomes visible.",
+      "body2": "This journey brings you from survival to a full life. It is a process of maturation and healing. Your inner strength appeals to you and invites you to take responsibility for your healing process."
+    },
+    "kern": {
+      "title": "The core of this method:",
+      "subtitle": "\"An encounter with your core, your challenge and your potential\""
+    },
+    "point1": {
+      "title": "1. Nature & energy: ",
+      "text1": "Patterns occur abundantly in nature and resonate deeply with the human spirit.",
+      "text2": "The spiral pattern, for example, is encoded in our DNA, in plants, animals, crystals, and in our Milky Way. Sunflowers arrange their seeds in spirals to maximize space and light, while tornadoes and whirlpools use spiral dynamics to conduct energy efficiently.",
+      "text3": "Many traditions view spirals as the path along which <strong>life force</strong> flows: a movement from inside out, from essence to manifestation.",
+      "text4": "Without structure, energy remains pure potential, but as soon as it organizes itself through <strong>patterns, structures</strong> and <strong>rhythms</strong>, it becomes tangible, perceptible, and creative.",
+      "imgAlt": "Sunflower with spiral pattern"
+    },
+    "point2": {
+      "title": "2. Survival & identity: ",
+      "text1": "In our childhood, survival patterns form the basis of who we think we need to be.",
+      "text2": "As humans, we are born into a family and shaped by culture, religion and education. In our first six years of life, we develop patterns that offer us grip, predictability and safety. We learn the strategies that help us stand upright and shape our identity. Those patterns form the basis on which we later, often unconsciously, continue to rely, especially when life becomes difficult.",
+      "text3": "During this period, early childhood trauma can arise, the impact of which can still be felt decades later.",
+      "imgAlt": "Wooden figures symbolizing family and patterns"
+    },
+    "point3": {
+      "title": "3. Breakthrough & awareness: ",
+      "text1": "When old patterns begin to pinch, the opportunity arises to see what is truly holding us back.",
+      "text2": "As we grow up further, we notice that jobs, relationships, choices, new experiences and conflicts create cracks in this construct. They show us differences and invite us to look with a broader, adult gaze.",
+      "text3": "Where the child in us often wants to hold on to being right or to certainty, the adult can see these moments as opportunities for growth and enrichment.",
+      "text4": "Questions such as \"Who am I really? Who am I beyond my role? Why am I getting stuck?\" then pass by.",
+      "text5": "This requires openness, curiosity, and the willingness to move beyond the familiar.",
+      "imgAlt": "Illustration of pain and breaking through"
+    },
+    "point4": {
+      "title": "4. Embodiment & creation: ",
+      "text1": "By anchoring new patterns in the body, space is created for conscious creation from our core.",
+      "text2": "True wisdom arises when our body has experienced something at the deepest level. In our heads, we have already thought it all over and walk in the same circle. Real change therefore does not begin in the head, but in the body. When we step out of thinking and drop into our body, space arises for new experiences, connection, and insight.",
+      "text3": "Potential, energy that until now remained invisible or hidden, may now show itself through the body.",
+      "text4": "Experience how energy gives power and intention direction.",
+      "text5": "Those who want to clear blocks and live more freely experience what it is like to work with both.",
+      "imgAlt": "Sand angel representing embodiment and surrender"
+    },
+    "point5": {
+      "title": "5. Wholeness & integration: ",
+      "text1": "When child and adult parts merge, patterns become life-serving and inner wholeness arises.",
+      "text2": "From that lived-through wisdom and inner space, we can create. It becomes conscious creation from intuition and clarity, from our core, aligned.",
+      "text3": "The adult and the child in us can come together in a sense of wholeness, where the child's qualities are safely carried by our adult parts and manifest in the world in a conscious way.",
+      "imgAlt": "White flower symbolizing wholeness and integration"
+    },
+    "journey": {
+      "title": "\"Your journey to freedom\""
+    },
+    "ready": {
+      "title": "Are you ready to come closer to your core?",
+      "body1": "We love working with people who are curious, feel that something is in the way but want to move forward, and are willing to embrace new experiences from trust and uncertainty. If you, as the adult part, want to take control, carefully explore your child part and adult part, and become whole by discovering your true core, then Reconstructive is for you.",
+      "body2": "What distinguishes our way of working is the profound human encounter. We offer a quality of presence, a clear gaze and a gentle heart. We bring both lightness and depth to each session, helping you discover new perspectives and freedom.",
+      "button": "Read more about our offer"
+    }
+  },
+  "aanbod": {
+    "details": {
+      "practical": "Practical information",
+      "benefits": "What it brings:",
+      "forWho": "For whom:",
+      "where": "Where:",
+      "when": "When:",
+      "price": "Price:",
+      "maxParticipants": "Max number of participants:",
+      "construct": {
+        "title": "An encounter",
+        "text1": "An initial encounter with your essence and with the reconstructive method.",
+        "text2": "For those who want to taste what lives beyond their patterns",
+        "text3": "Do you also notice that some live more freely than you? That when you want to change something, a voice in your head immediately says, 'yes but, that's not possible because...' Those voices co-determine how large your freedom feels.",
+        "text4": "During this initiation day you step out of your familiar frameworks. Through experiential exercises and the wisdom of nature you are invited to step outside your construct. It is as if you open a window that was closed for a long time. Light comes in. Space. Curiosity.",
+        "text5": "Nature always finds a way even in complex circumstances. And precisely that reminds you that you too can move, shift, open.",
+        "li1": "Broader perspective on your own patterns",
+        "li2": "A first experience of space and freedom",
+        "li3": "More awareness about what drives you",
+        "li4": "Curiosity as a starting point for growth"
+      },
+      "reconstructive": {
+        "title": "An invitation",
+        "text1": "an invitation to get closer to yourself.",
+        "text2": "Sometimes you feel that something is still in the way. Something that does not release through the head, but wants to be seen through the body.",
+        "text3": "Often they are deeply rooted patterns, old stories, suppressed emotions and survival strategies that unconsciously prevent us from living our potential to the full. By working with them in the body, movement, clarity and direction emerge.",
+        "text4": "Through Reconstructive, thinking is set aside. What remains is the body and what it has to tell you.",
+        "text5": "We work in small groups, without language. We build together an energetic field from which movement arises. The group is a reflecting field: what you see in others touches something in you. What you show opens up something in them.",
+        "text6": "Reconstructive is not therapy, but an invitation to surrender to what wants to show itself in you. Without story. Without analysis. Only a direct encounter with yourself and your full potential.",
+        "li1": "Broader perspective on your own patterns",
+        "li2": "More freedom",
+        "li3": "New insights",
+        "li4": "Breakthrough in patterns that until now remained stuck",
+        "li5": "An experience that leaves a lasting impression"
+      },
+      "gold": {
+        "title": "A homecoming",
+        "text1": "A homecoming to yourself.",
+        "text2": "This retreat is an inner journey where we come layer after layer closer to your blueprint, so that who you always were becomes visible.",
+        "text3": "Every day we go into nature. It mirrors you without judgment: where you are still holding on, where you may soften, where you may open. Nature shows what your body already knew, but what your head perhaps did not yet dare to acknowledge.",
+        "text4": "Reconstructive makes visible what you encounter along the way: old patterns, protective layers, suppressed emotions. By working with them in the body, movement, clarity and direction emerge. You feel how you get closer to your blueprint, that quiet, deep knowing of who you are in essence.",
+        "text5": "The group becomes a bedding. You don't have to do it alone, but you do make your own inner journey.",
+        "li1": "More clarity",
+        "li2": "embodiment",
+        "li3": "peace",
+        "li4": "firm contact with your core"
+      }
+    },
+    "hero": {
+      "title": "Experience from your core",
+      "body": "There are moments in life when you feel that more is possible. That your body knows something your mind cannot yet follow. That underneath the daily patterns a deeper layer is waiting to be seen. Reconstructive is an invitation to meet that layer.",
+      "button": "Read more about our approach",
+      "outro": "Discover, deepen or transform and move closer to your essence"
+    },
+    "footer": {
+      "text1": "Maybe it is an initial curiosity.",
+      "text2": "Maybe a desire for deeper contact with yourself.",
+      "text3": "Maybe you feel it is time to return to your essence.",
+      "text4": "Whichever format you choose, each step brings you closer to who you truly are.",
+      "button": "Contact us for a free, no-obligation conversation"
+    },
+    "cards": {
+      "construct": {
+        "title": "Beyond your construct (1 day)",
+        "text": "Step out of your familiar patterns for a day and discover how much space is created when you let go of your construct.",
+        "alt": "Photo of a square with a flower in the center"
+      },
+      "reconstructive": {
+        "title": "Reconstructive (2 days)",
+        "text": "Experience the transformative power of Reconstructive and get closer to your intuition, your freedom and your core.",
+        "alt": "Photo of a wooden path through tall grass"
+      },
+      "gold": {
+        "title": "Find your gold (6 days)",
+        "text": "Embark on a profound journey through nature and body, and return to the essence of who you truly are",
+        "alt": "Photo of a wooden path through a dry field with mountains in the background"
+      }
+    },
+    "seeDatum": "See dates"
+  },
+  "posts": {
+    "title": "Posts",
+    "noPosts": "There are currently no posts available"
+  },
+  "post": {
+    "back": "Back to posts",
+    "published": "Published:"
+  },
+  "error404": {
+    "title": "404 - Page not found",
+    "header": "Oops! Page not found",
+    "message": "It looks like this page no longer exists or has been moved.",
+    "back": "Back to home"
+  }
+}
