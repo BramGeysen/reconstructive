@@ -5,7 +5,7 @@ import {
   useTranslatedPath,
   useTranslations,
 } from "@src/i18n/utils";
-import { supportedLanguages } from "@src/i18n/ui";
+import { languages } from "@src/i18n/utils.ts";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 
   const posts = await sanityClient.fetch<{ slug: string }[]>(SLUGS_QUERY);
 
-  return supportedLanguages.flatMap((l) => {
+  return Object.values(languages).flatMap((l) => {
     return posts.map((post) => ({
       params: {
         locale: l === "nl" ? undefined : l,

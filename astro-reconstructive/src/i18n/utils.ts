@@ -5,8 +5,8 @@ export const defaultLang = "nl";
 export const showDefaultLang = false;
 
 export const languages = {
-  en: "English",
-  nl: "Nederlands",
+  en: "en",
+  nl: "nl",
 } as const;
 
 // Combined dictionary containing your JSON files
