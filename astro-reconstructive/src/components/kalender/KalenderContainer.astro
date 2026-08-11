@@ -1,4 +1,7 @@
 ---
+import { getLangFromUrl, useTranslations } from "@src/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 import type { SanityDocument } from "@sanity/client";
 import { sanityClient } from "sanity:client";
 import KalenderCard from "./KalenderCard.astro";
@@ -6,16 +9,23 @@ import type { Kalender } from "@src/types";
 
 const POSTS_QUERY = `*[
   _type == "kalender"
+    && language == $lang
 ] | order(startDate asc){_id, title, type, datum, locatie, prijs, taal, aantalDeelnemers, voorWie, overnachting, startDate}`;
 
-const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY);
+const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY, { lang });
 
 const kalenderItems: Kalender[] = posts as unknown as Kalender[];
 ---
 
-<h2 class="text-align-center">Kalender</h2>
+<h2 class="text-align-center">{t("kalender.title")}</h2>
 <div class="container">
-  {kalenderItems.map((item) => <KalenderCard kalenderData={item} />)}
+  {
+    kalenderItems.length === 0 ? (
+      <p class="center text-gray">{t("kalender.noFound")}</p>
+    ) : (
+      kalenderItems.map((item) => <KalenderCard kalenderData={item} />)
+    )
+  }
 </div>
 
 <style>

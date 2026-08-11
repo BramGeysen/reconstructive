@@ -43,8 +43,17 @@ export const kalenderType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'taal',
+      name: 'language',
+      title: 'Taal',
       type: 'string',
+      options: {
+        list: [
+          {title: 'Nederlands', value: 'nl'},
+          {title: 'English', value: 'en'},
+        ],
+        layout: 'radio',
+      },
+      initialValue: 'Nederlands',
       validation: (rule) => rule.required(),
     }),
     defineField({
