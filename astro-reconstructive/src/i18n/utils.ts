@@ -33,8 +33,8 @@ export function useTranslatedPath(lang: keyof typeof ui) {
     let fullPath = `${base}${prefix}${cleanedPath}`;
     fullPath = fullPath.replace(/\/+/g, "/");
 
-    // Ensure it ends with a slash if it's the root of a locale
-    if (Object.keys(languages).some((l) => fullPath.endsWith(`/${l}`))) {
+    // Append trailing slash if missing
+    if (!fullPath.endsWith("/") && !/\.[a-z0-9]+$/i.test(fullPath)) {
       fullPath += "/";
     }
 
