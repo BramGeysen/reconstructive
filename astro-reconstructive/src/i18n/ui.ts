@@ -360,9 +360,13 @@ export const ui = {
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nihil. Explicabo doloribus voluptates dolores quae iusto sapiente vel numquam. Corrupti animi autem fugiat nulla quibusdam voluptatem nesciunt obcaecati maiores soluta.",
     "home.blog.noPosts": "There are currently no posts available.",
     "home.about.title": "Who are we?",
+    "home.about.reconstructive":
+      "Reconstructive.be is a collaboration between Elke Busschots and Bram Geysen, who each have their own practice and completed their training at the RIIHS. They work closely with Carola Castillo (middle), the founder of the Reconstructive methodology and philosophy and founder of the Reconstructive International Integration Holistic School:",
     "home.about.groupPhotoAlt":
       "group photo with Bram Geysen, Elke Busschots and Carola Castillo",
     "home.about.bramElke":
+      "Bram Geysen (left) and Elke Busschots (right) are certified Reconstructive facilitators.",
+    "home.about.text2":
       "Bram Geysen (left) and Elke Busschots (right) are certified Reconstructive facilitators.",
     "home.about.carola":
       "Carola Castillo (middle) is the founder of the school of thought and methodology of Reconstructive and founder of the Reconstructive International Integration Holistic School: ",
@@ -371,6 +375,20 @@ export const ui = {
     "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
     "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
     "home.about.mail": "email",
+    "home.what.title": "What is Reconstructive?",
+    "home.what.text1":
+      "Reconstructive is powerful, body-oriented constellation work that goes beyond words. Without language, the perception of others also falls away. What remains is the body showing what is truly going on: old reflexes, protective layers, and movements living beneath the surface. No analysis, no story — only direct experience.",
+    "home.what.title1": "Who is it for?",
+    "home.what.text2":
+      "For anyone who feels that something wants to shift, but notices that talking or thinking no longer helps. For those stuck in patterns (pleasing, controlling, always staying busy), wanting to experience more intuition or get closer to their core. Also for people who have already done a lot of inner work and feel that the body wants to reveal the next layer.",
+    "home.what.title2": "What makes it unique?",
+    "home.what.text3":
+      "Reconstructive works completely wordlessly. This creates a pure mirror: no projection, no interpretation, no assumptions. In the energetic group field, movement and body language mirror each other. Reconstructive works with the adult part, the part that can carry, choose, and remain present when old reflexes emerge.",
+    "home.what.title3": "What does it deliver?",
+    "home.what.text4":
+      "Movement where you were stuck. Clarity where there was confusion. Space where there was tension.",
+    "home.what.text5":
+      "Your intuition grows stronger, your freedom greater, your body calmer. You let go of old stories and connect with your potential — tangible, lived-through, and permanently present in your daily life.",
     "home.welcome.title": "Welcome to Reconstructive.be",
     "home.welcome.text1":
       "A source of connection, where deep transformation through wordless bodywork breaks old patterns, and your adult self regains access to your pure core.",
@@ -383,6 +401,12 @@ export const ui = {
       '"I feel hugely empowered! As if I am supported by an entire army. As if I give myself permission to be completely bold, playful, and wise as myself!"',
     "home.testimonial.author": "Nele",
     "impressies.gallery.alt": "Collection of photos of reconstructive",
+
+    // AnimationQuotes
+    "quotes.1":
+      '"Where I used to stay silent, I now speak authentically. And that is precisely why I am heard."',
+    "quotes.2":
+      '"Others noticed it first: I now carry more lightness and space with me."',
 
     // About
     "about.hero.title": "Discover Reconstructive: Your journey to authenticity",
@@ -431,13 +455,19 @@ export const ui = {
 
     // Aanpak
     "aanpak.hero.title": "Reconstructive: a journey back to yourself.",
+    "aanpak.hero.text1":
+      "Reconstructive is based on a simple yet profound principle: everything in our lives moves according to patterns. Some support us, others limit us. In this work, we explore how those patterns originate, how they anchor in the body, and how we can open them up again so that energy, intuition, and creative power can flow more freely. In this way, insights integrate into daily life and create lasting change.",
+    "aanpak.hero.text2":
+      "These five pillars form the foundation of our approach and show how Reconstructive guides you from survival to embodied wholeness.",
+    "aanpak.hero.text3":
+      "This journey takes you from survival to living fully. It is a process of emotional maturation and healing. Your inner strength calls upon you and invites you to take responsibility for your healing process.",
     "aanpak.hero.body1":
       "Reconstructive offers a unique path to living from your core, your authenticity and your intuition. It invites you to question the constructions you have built up, often unconsciously, from early impressions. In this way, the freedom that lies behind them becomes visible.",
     "aanpak.hero.body2":
       "This journey brings you from survival to a full life. It is a process of maturation and healing. Your inner strength appeals to you and invites you to take responsibility for your healing process.",
     "aanpak.kern.title": "The core of this method:",
     "aanpak.kern.subtitle":
-      '"Een ontmoeting met je kern, je uitdaging en je potentieel"',
+      '"An encounter with your core, your challenge and your potential"',
     "aanpak.point1.title": "1. Nature & energy: ",
     "aanpak.point1.text1":
       "Patterns occur abundantly in nature and resonate deeply with the human spirit.",
