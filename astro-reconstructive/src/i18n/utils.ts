@@ -33,12 +33,20 @@ export function useTranslatedPath(lang: keyof typeof ui) {
     let fullPath = `${base}${prefix}${cleanedPath}`;
     fullPath = fullPath.replace(/\/+/g, "/");
 
-    // Append trailing slash if missing
-    if (!fullPath.endsWith("/") && !/\.[a-z0-9]+$/i.test(fullPath)) {
-      fullPath += "/";
+    // 1. Separate the URL path from any query parameters (?) or anchors (#)
+    const [pathPart, ...hashParts] = fullPath.split("#");
+    const hash = hashParts.length > 0 ? `#${hashParts.join("#")}` : "";
+
+    const [cleanPathOnly, ...queryParts] = pathPart.split("?");
+    const query = queryParts.length > 0 ? `?${queryParts.join("?")}` : "";
+
+    // 2. Apply trailing slash ONLY to the path portion
+    let finalPath = cleanPathOnly;
+    if (!finalPath.endsWith("/") && !/\.[a-z0-9]+$/i.test(finalPath)) {
+      finalPath += "/";
     }
 
-    return fullPath;
+    return `${finalPath}${query}${hash}`;
   };
 }
 
