@@ -46,17 +46,14 @@ export const ui = {
     "home.aanbod.button": "Gratis kennismakingsgesprek",
     "home.blog.title": "Blog",
     "home.blog.noPosts": "Er zijn momenteel geen berichten beschikbaar.",
-    "home.about.groupPhotoAlt":
-      "groepsfoto met Bram Geysen Elke Busschots en Carola Castillo",
-    "home.about.title": "Wie zijn wij?",
-    "home.about.reconstructive":
-      "Reconstructive.be is een samenwerkingen tussen Elke Busschots en Bram Geysen die elk hun eigen praktijk hebben en de opleidingen hebben gevolgd bij de RIIHS. Ze werken nauw samen Carola Castillo(midden) de grondlegster van het gedachtengoed en de methodiek Reconstructive en oprichtster van Reconstructive International Integratie Holistic School:",
-    "home.about.text2":
-      "Bram Geysen (links) en Elke Busschots (rechts) zijn gecertificeerde Reconstructive begeleiders.",
     "home.about.contactTitle": "Contacteer ons voor een vrijblijvend gesprek:",
     "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
     "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
+    "home.about.photo":
+      "(foto: Carola Castillo(midden), grondlegster en directeur van RIIHS.)",
     "home.about.mail": "mail",
+    "home.about.groupPhotoAlt":
+      "groepsfoto met Bram Geysen Elke Busschots en Carola Castillo",
     "home.what.title": "Wat is Reconstructive?",
     "home.what.text1":
       "Reconstructive is krachtig, lichaamsgericht opstellingswerk dat voorbij woorden gaat. Zonder taal valt ook de perceptie van anderen weg. Wat overblijft, is het lichaam dat toont wat er écht speelt: oude reflexen, beschermingslagen en bewegingen die onder de oppervlakte leven. Geen analyse, geen verhaal — alleen directe ervaring",
@@ -359,22 +356,15 @@ export const ui = {
     "home.blog.intro":
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nihil. Explicabo doloribus voluptates dolores quae iusto sapiente vel numquam. Corrupti animi autem fugiat nulla quibusdam voluptatem nesciunt obcaecati maiores soluta.",
     "home.blog.noPosts": "There are currently no posts available.",
-    "home.about.title": "Who are we?",
-    "home.about.reconstructive":
-      "Reconstructive.be is a collaboration between Elke Busschots and Bram Geysen, who each have their own practice and completed their training at the RIIHS. They work closely with Carola Castillo (middle), the founder of the Reconstructive methodology and philosophy and founder of the Reconstructive International Integration Holistic School:",
-    "home.about.groupPhotoAlt":
-      "group photo with Bram Geysen, Elke Busschots and Carola Castillo",
-    "home.about.bramElke":
-      "Bram Geysen (left) and Elke Busschots (right) are certified Reconstructive facilitators.",
-    "home.about.text2":
-      "Bram Geysen (left) and Elke Busschots (right) are certified Reconstructive facilitators.",
-    "home.about.carola":
-      "Carola Castillo (middle) is the founder of the school of thought and methodology of Reconstructive and founder of the Reconstructive International Integration Holistic School: ",
     "home.about.contactTitle":
       "Contact us for a free, no-obligation conversation:",
     "home.about.elkePhone": "Elke Busschots: [+ 32 475 46 74 39]",
     "home.about.bramPhone": "Bram Geysen: [+ 32 473 52 30 94 ]",
     "home.about.mail": "email",
+    "home.about.photo":
+      "“(Photo: Carola Castillo (center), founder and director of RIIHS.)”",
+    "home.about.groupPhotoAlt":
+      "group photo with Bram Geysen, Elke Busschots and Carola Castillo",
     "home.what.title": "What is Reconstructive?",
     "home.what.text1":
       "Reconstructive is powerful, body-oriented constellation work that goes beyond words. Without language, the perception of others also falls away. What remains is the body showing what is truly going on: old reflexes, protective layers, and movements living beneath the surface. No analysis, no story — only direct experience.",
