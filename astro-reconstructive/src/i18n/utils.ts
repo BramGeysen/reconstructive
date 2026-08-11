@@ -1,5 +1,5 @@
-import defaultLangJson from "./en.json";
-import nlLangJson from "./nl.json";
+import defaultLangJson from "./nl.json";
+import enLangJson from "./en.json";
 
 export const defaultLang = "nl";
 export const showDefaultLang = false;
@@ -11,8 +11,8 @@ export const languages = {
 
 // Combined dictionary containing your JSON files
 export const ui = {
-  en: defaultLangJson,
-  nl: nlLangJson,
+  nl: defaultLangJson,
+  en: enLangJson,
 } as const;
 
 export type Lang = keyof typeof ui;
