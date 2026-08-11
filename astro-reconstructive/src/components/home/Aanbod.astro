@@ -43,18 +43,35 @@ import mountainPathImg from "@assets/imgs/mountain-path.jpg";
   </div>
   <AnimationQuotes />
 </section>
+
 <style>
+  .container {
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
   .AanbodCardContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   @media (max-width: 1000px) {
     .AanbodCardContainer {
       grid-template-columns: 1fr;
-      margin: 1.5rem;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
 </style>
