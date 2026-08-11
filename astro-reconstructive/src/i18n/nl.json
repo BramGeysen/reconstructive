@@ -274,5 +274,9 @@
     "header": "Oeps! Pagina niet gevonden",
     "message": "Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.",
     "back": "Terug naar home"
+  },
+  "kalender": {
+    "title": "Calendar",
+    "noFound": "No dates found"
   }
 }
