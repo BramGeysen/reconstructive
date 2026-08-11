@@ -20,15 +20,12 @@ const t = useTranslations(lang);
   <div class="navigation">
     <h4>Navigation</h4>
     <p><a href={translatePath("/")}>home</a></p>
-    <p><a href={translatePath("/aanpak")}>{t("nav.aanpak")}</a></p>
+    <p><a href={translatePath("/aanpak/")}>{t("nav.aanpak")}</a></p>
     <p>
-      <a href={translatePath("/aanbod")}>{t("nav.aanbod")}</a>
+      <a href={translatePath("/aanbod/")}>{t("nav.aanbod")}</a>
     </p>
-    <p>
-      <a href={translatePath("/impressies")}>{t("nav.impressies")}</a>
-    </p>
-    <p><a href={translatePath("/about")}>{t("nav.about")}</a></p>
-    <p><a href={translatePath("/posts")}>blog</a></p>
+    <p><a href={translatePath("/about/")}>{t("nav.about")}</a></p>
+    <p><a href={translatePath("/posts/")}>blog</a></p>
   </div>
   <p class="text-align-center">
     &copy; 2026 Reconstructive.be. All Rights Reserved
@@ -38,7 +35,7 @@ const t = useTranslations(lang);
 <style>
   footer {
     color: #b7aaaa;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     position: relative;
   }
 
