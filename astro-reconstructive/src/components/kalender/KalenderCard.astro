@@ -53,9 +53,9 @@ const link = translatePath(anchor);
         </p>
       )
     }
-    <a href={link} class="btn-link green-btn btn">
-      lees meer
-    </a>
+    <button class="green-btn btn">
+      <a href={link}>lees meer </a>
+    </button>
   </div>
 </div>
 
@@ -79,9 +79,9 @@ const link = translatePath(anchor);
     margin: 10px 0;
   }
 
-  .btn-link {
+  .btn {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 15px;
+    right: 20px;
   }
 </style>
