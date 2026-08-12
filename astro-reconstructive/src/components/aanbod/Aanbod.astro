@@ -4,7 +4,7 @@ import { getLangFromUrl, useTranslations } from "@src/i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 import AanbodCard from "@components/aanbod/AanbodCard.astro";
-import constructImg from "@assets/imgs/constructImg.jpg";
+import grassPath from "@assets/imgs/grass-path.jpg";
 import mountainPathImg from "@assets/imgs/mountain-path.jpg";
 import AanbodDetails from "./AanbodDetails.astro";
 ---
@@ -12,13 +12,13 @@ import AanbodDetails from "./AanbodDetails.astro";
 <div class="grid">
   <div class="aanbodCardContainer">
     <div class="card-bg-slider"></div>
-    <div class="card-wrapper" data-content="construct" id="construct">
+    <div class="card-wrapper" data-content="reconstructive" id="reconstructive">
       <AanbodCard
-        title={t("aanbod.cards.construct.title")}
-        text={t("aanbod.cards.construct.text")}
-        alt={t("aanbod.cards.construct.alt")}
+        title={t("aanbod.cards.reconstructive.title")}
+        text={t("aanbod.cards.reconstructive.text")}
+        alt={t("aanbod.cards.reconstructive.alt")}
         link="#"
-        img={constructImg}
+        img={grassPath}
       />
     </div>
     <div class="card-wrapper" data-content="gold" id="gold">
@@ -31,21 +31,23 @@ import AanbodDetails from "./AanbodDetails.astro";
       />
     </div>
   </div>
-  <div class="details text-gray text-margin" data-content="construct">
+  <div class="details text-gray text-margin" data-content="reconstructive">
     <AanbodDetails
-      title={t("aanbod.details.construct.title")}
+      title={t("aanbod.details.reconstructive.title")}
       text={[
-        t("aanbod.details.construct.text1"),
-        t("aanbod.details.construct.text2"),
-        t("aanbod.details.construct.text3"),
-        t("aanbod.details.construct.text4"),
-        t("aanbod.details.construct.text5"),
+        t("aanbod.details.reconstructive.text1"),
+        t("aanbod.details.reconstructive.text2"),
+        t("aanbod.details.reconstructive.text3"),
+        t("aanbod.details.reconstructive.text4"),
+        t("aanbod.details.reconstructive.text5"),
+        t("aanbod.details.reconstructive.text6"),
       ]}
       li={[
-        t("aanbod.details.construct.li1"),
-        t("aanbod.details.construct.li2"),
-        t("aanbod.details.construct.li3"),
-        t("aanbod.details.construct.li4"),
+        t("aanbod.details.reconstructive.li1"),
+        t("aanbod.details.reconstructive.li2"),
+        t("aanbod.details.reconstructive.li3"),
+        t("aanbod.details.reconstructive.li4"),
+        t("aanbod.details.reconstructive.li5"),
       ]}
     />
   </div>

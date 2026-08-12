@@ -9,7 +9,7 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 import AnimationQuotes from "@components/AnimationQuotes.astro";
 import AanbodCard from "@components/aanbod/AanbodCard.astro";
-import constructImg from "@assets/imgs/constructImg.jpg";
+import grassPath from "@assets/imgs/grass-path.jpg";
 import mountainPathImg from "@assets/imgs/mountain-path.jpg";
 ---
 
@@ -26,7 +26,7 @@ import mountainPathImg from "@assets/imgs/mountain-path.jpg";
         text={t("home.aanbod.card1.text")}
         link={translatePath("/aanbod/#construct")}
         alt={t("home.aanbod.card1.alt")}
-        img={constructImg}
+        img={grassPath}
       />
       <AanbodCard
         title={t("home.aanbod.card3.title")}
